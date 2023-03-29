@@ -1,0 +1,56 @@
+import 'reflect-metadata';
+
+import { buildSchema } from 'type-graphql';
+// import { NewRecipeInput, Recipe, RecipeResolver, RecipesArgs } from '../../lib/re';
+import { startServerAndCreateNextHandler } from '@as-integrations/next';
+
+import { ApolloServer } from '@apollo/server';
+import { resolvers } from '../../prisma/generated/type-graphql/index';
+
+// import { HelloResolver } from '../../lib/graphql/resolvers/hello.resolver';
+// import { UserResolver } from '../../lib/graphql/resolvers/user.resolver';
+// import { FileResolver } from '../../lib/graphql/resolvers/file.resolver';
+// import { ConfigResolver } from '../../lib/graphql/resolvers/config.resolver';
+import { createGraphQLHandler } from "next-graphql";
+import { PrismaClient } from '@prisma/client';
+import path from 'path';
+const prisma = new PrismaClient();
+
+const schema = await buildSchema({
+
+    resolvers: resolvers, validate: false,
+
+    // here provide all the types that are missing in schema
+    orphanedTypes: [],
+});
+
+
+const apolloServer = new ApolloServer({
+    schema,
+
+    // context: async (_) => ({ prisma }),
+
+
+});
+
+
+// const handler = apolloServer.createHandler({ path: "/api/graphql" });
+
+// //   export const config = {
+// //     api: {
+// //       bodyParser: false
+// //     }
+// //   };
+// // const handler = createGraphQLHandler ({ res })
+export default startServerAndCreateNextHandler(apolloServer, {
+    context: async (req, res) => ({ prisma }),
+});
+
+//   // export default handler;
+
+
+
+
+
+
+

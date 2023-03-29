@@ -1,0 +1,36 @@
+.container{
+    width:400px;
+    position: relative;
+}
+.progress{
+    height: 40px;
+    width:400px;
+    border-radius:20px;
+    box-sizing: border-box;
+    filter: drop-shadow(0 1px 3px rgbac(0,0,0,22));
+    background-color: #fff;
+    z-index: 1;
+    }
+.progress::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 90%;
+    bottom: 0;
+    top:0;
+    background: linear-gradient(to right,#7abcff 0%,#00BCD4 44%,#2196f3 100%);
+    border-radius: 20px;
+    box-shadow: 0 14px 28px rgba(33,150,243,0), 0 10px  10px rgba(9,188,215,0.88);
+    animation: loading 6s  linear infinite;
+    filter: hue-rotate(90deg);
+}
+
+@keyframes loading {
+    70%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        right: 0;
+        filter: hue-rotate(-90deg);
+    }
+}

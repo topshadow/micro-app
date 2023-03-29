@@ -1,0 +1,687 @@
+cro-app@ D:\code\opensource\micro-app
+├─┬ @ant-design/icons@5.0.1 -> .\node_modules\.pnpm\@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y\node_modules\@ant-design\icons
+│ ├─┬ @types/jest@25.2.3 invalid: "^24.9.1" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "29.2.6" from node_modules/.pnpm/@apollo+client@3.7.10_wxfjnvblbhu4ianu4f2qg722fu/node_modules/@apollo/client, "29.2.3" from node_modules/.pnpm/@as-integrations+next@1.2.0_muqjbpjoiwgmavcrilagq3zl7m/node_modules/@as-integrations/next, "29.4.0" from node_modules/.pnpm/@prisma+client@4.11.0_prisma@4.11.0/node_modules/@prisma/client, "^29.0.0" from node_modules/.pnpm/antd@5.3.3_biqbaboplfbrettd7655fr4n2y/node_modules/antd, "^27.0.1" from node_modules/.pnpm/next-graphql@2.3.5_encoding@0.1.13/node_modules/next-graphql, "29.4.0" from node_modules/.pnpm/prisma@4.11.0/node_modules/prisma, "^26.0.14" from node_modules/.pnpm/type-graphql@1.1.1_yxlhq5elwzdhphazhcbwh6wmlq/node_modules/type-graphql, "^28.1.8" from node_modules/.pnpm/typegraphql-prisma@0.23.2_5y3urbdbkcjeuamo5yi6f5lsoq/node_modules/typegraphql-prisma, "^26.0.0" from node_modules/.pnpm/@ant-design+colors@7.0.0/node_modules/@ant-design/colors -> .\node_modules\.pnpm\@types+jest@25.2.3\node_modules\@types\jest
+│ │ ├─┬ jest-diff@25.5.0 -> .\node_modules\.pnpm\jest-diff@25.5.0\node_modules\jest-diff
+│ │ │ └─┬ pretty-format@25.5.0 -> .\node_modules\.pnpm\pretty-format@25.5.0\node_modules\pretty-format
+│ │ │   └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^16.2.0" from node_modules/.pnpm/rc-util@4.21.1/node_modules/rc-util, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal -> .\node_modules\.pnpm\react@18.2.0\node_modules\react│ │ └─┬ pretty-format@25.5.0 -> .\node_modules\.pnpm\pretty-format@25.5.0\node_modules\pretty-format
+│ │   └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ react-dom@18.2.0 invalid: "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ └── react@18.2.0 invalid: "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+├─┬ @ant-design/pro-components@2.4.4 -> .\node_modules\.pnpm\@ant-design+pro-components@2.4.4_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-components
+│ ├─┬ @ant-design/pro-card@2.3.2 -> .\node_modules\.pnpm\@ant-design+pro-card@2.3.2_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-card
+│ │ ├─┬ @ant-design/icons@5.0.1 -> .\node_modules\.pnpm\@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y\node_modules\@ant-design\icons
+│ │ │ └── react@18.2.0 deduped invalid: "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-provider@2.7.0 -> .\node_modules\.pnpm\@ant-design+pro-provider@2.7.0_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-provider
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-utils@2.7.2 -> .\node_modules\.pnpm\@ant-design+pro-utils@2.7.2_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-utils
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ antd@5.3.3 -> .\node_modules\.pnpm\antd@5.3.3_biqbaboplfbrettd7655fr4n2y\node_modules\antd
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-resize-observer@1.3.1 -> .\node_modules\.pnpm\rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-resize-observer
+│ │ │ └── react@18.2.0 deduped invalid: "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ @ant-design/pro-descriptions@2.2.3 -> .\node_modules\.pnpm\@ant-design+pro-descriptions@2.2.3_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-descriptions
+│ │ ├─┬ @ant-design/pro-field@2.5.2 -> .\node_modules\.pnpm\@ant-design+pro-field@2.5.2_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-field
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-form@2.10.1 -> .\node_modules\.pnpm\@ant-design+pro-form@2.10.1_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-form
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-skeleton@2.1.0 -> .\node_modules\.pnpm\@ant-design+pro-skeleton@2.1.0_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-skeleton
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-utils@2.7.2 -> .\node_modules\.pnpm\@ant-design+pro-utils@2.7.2_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-utils
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ antd@5.3.3 -> .\node_modules\.pnpm\antd@5.3.3_biqbaboplfbrettd7655fr4n2y\node_modules\antd
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-resize-observer@1.3.1 invalid: "^0.2.3" from node_modules/.pnpm/@ant-design+pro-descriptions@2.2.3_yqafbpanm4rjwdjr4iy3j5y7cm/node_modules/@ant-design/pro-descriptions, "^0.2.3" from node_modules/.pnpm/@ant-design+pro-field@2.5.2_yqafbpanm4rjwdjr4iy3j5y7cm/node_modules/@ant-design/pro-field, "^0.2.3" from node_modules/.pnpm/@ant-design+pro-field@2.5.2_yqafbpanm4rjwdjr4iy3j5y7cm/node_modules/@ant-design/pro-field -> .\node_modules\.pnpm\rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-resize-observer
+│ │ │ └── react@18.2.0 deduped invalid: "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └─┬ use-json-comparison@1.0.6 -> .\node_modules\.pnpm\use-json-comparison@1.0.6_react@18.2.0\node_modules\use-json-comparison
+│ │   └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ @ant-design/pro-field@2.5.2 -> .\node_modules\.pnpm\@ant-design+pro-field@2.5.2_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-field
+│ │ ├─┬ @ant-design/icons@5.0.1 -> .\node_modules\.pnpm\@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y\node_modules\@ant-design\icons
+│ │ │ └── react@18.2.0 deduped invalid: "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons -> .\node_modules\.pnpm\react@18.2.0\node_modules\react        
+│ │ ├─┬ @ant-design/pro-provider@2.7.0 -> .\node_modules\.pnpm\@ant-design+pro-provider@2.7.0_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-provider
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-utils@2.7.2 -> .\node_modules\.pnpm\@ant-design+pro-utils@2.7.2_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-utils
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @chenshuai2144/sketch-color@1.0.9 -> .\node_modules\.pnpm\@chenshuai2144+sketch-color@1.0.9_react@18.2.0\node_modules\@chenshuai2144\sketch-color
+│ │ │ ├── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ │ └─┬ reactcss@1.2.3 -> .\node_modules\.pnpm\reactcss@1.2.3_react@18.2.0\node_modules\reactcss
+│ │ │   └── react@18.2.0 invalid: "^15.1.0" from node_modules/.pnpm/reactcss@1.2.3_react@18.2.0/node_modules/reactcss -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ antd@5.3.3 -> .\node_modules\.pnpm\antd@5.3.3_biqbaboplfbrettd7655fr4n2y\node_modules\antd
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └─┬ swr@2.1.1 -> .\node_modules\.pnpm\swr@2.1.1_react@18.2.0\node_modules\swr
+│ │   ├── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │   └─┬ use-sync-external-store@1.2.0 -> .\node_modules\.pnpm\use-sync-external-store@1.2.0_react@18.2.0\node_modules\use-sync-external-store
+│ │     └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ @ant-design/pro-form@2.10.1 -> .\node_modules\.pnpm\@ant-design+pro-form@2.10.1_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-form
+│ │ ├─┬ @ant-design/icons@5.0.1 -> .\node_modules\.pnpm\@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y\node_modules\@ant-design\icons
+│ │ │ └── react@18.2.0 deduped invalid: "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-field@2.5.2 -> .\node_modules\.pnpm\@ant-design+pro-field@2.5.2_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-field
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-provider@2.7.0 -> .\node_modules\.pnpm\@ant-design+pro-provider@2.7.0_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-provider
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-utils@2.7.2 -> .\node_modules\.pnpm\@ant-design+pro-utils@2.7.2_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-utils
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @chenshuai2144/sketch-color@1.0.9 -> .\node_modules\.pnpm\@chenshuai2144+sketch-color@1.0.9_react@18.2.0\node_modules\@chenshuai2144\sketch-color
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @umijs/use-params@1.0.9 -> .\node_modules\.pnpm\@umijs+use-params@1.0.9_react@18.2.0\node_modules\@umijs\use-params
+│ │ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ antd@5.3.3 -> .\node_modules\.pnpm\antd@5.3.3_biqbaboplfbrettd7655fr4n2y\node_modules\antd
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-field-form@1.28.0 -> .\node_modules\.pnpm\rc-field-form@1.28.0_biqbaboplfbrettd7655fr4n2y\node_modules\rc-field-form
+│ │ │ └── react@18.2.0 deduped invalid: "^16.14.0" from node_modules/.pnpm/rc-field-form@1.28.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-field-form, "^16.14.0" from node_modules/.pnpm/rc-field-form@1.28.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-field-form -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-resize-observer@1.3.1 -> .\node_modules\.pnpm\rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-resize-observer
+│ │ │ └── react@18.2.0 deduped invalid: "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer -> .\node_modules\.pnpm\react@18.2.0\node_modules\react│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ use-json-comparison@1.0.6 -> .\node_modules\.pnpm\use-json-comparison@1.0.6_react@18.2.0\node_modules\use-json-comparison
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └─┬ use-media-antd-query@1.1.0 -> .\node_modules\.pnpm\use-media-antd-query@1.1.0_react@18.2.0\node_modules\use-media-antd-query
+│ │   └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ @ant-design/pro-layout@7.10.3 -> .\node_modules\.pnpm\@ant-design+pro-layout@7.10.3_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-layout
+│ │ ├─┬ @ant-design/icons@5.0.1 -> .\node_modules\.pnpm\@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y\node_modules\@ant-design\icons
+│ │ │ └── react@18.2.0 deduped invalid: "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-provider@2.7.0 -> .\node_modules\.pnpm\@ant-design+pro-provider@2.7.0_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-provider
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-utils@2.7.2 -> .\node_modules\.pnpm\@ant-design+pro-utils@2.7.2_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-utils
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @umijs/use-params@1.0.9 -> .\node_modules\.pnpm\@umijs+use-params@1.0.9_react@18.2.0\node_modules\@umijs\use-params
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ antd@5.3.3 -> .\node_modules\.pnpm\antd@5.3.3_biqbaboplfbrettd7655fr4n2y\node_modules\antd
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-resize-observer@1.3.1 -> .\node_modules\.pnpm\rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-resize-observer
+│ │ │ └── react@18.2.0 deduped invalid: "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ swr@2.1.1 -> .\node_modules\.pnpm\swr@2.1.1_react@18.2.0\node_modules\swr
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ use-json-comparison@1.0.6 -> .\node_modules\.pnpm\use-json-comparison@1.0.6_react@18.2.0\node_modules\use-json-comparison
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └─┬ use-media-antd-query@1.1.0 -> .\node_modules\.pnpm\use-media-antd-query@1.1.0_react@18.2.0\node_modules\use-media-antd-query
+│ │   └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ @ant-design/pro-list@2.3.4 -> .\node_modules\.pnpm\@ant-design+pro-list@2.3.4_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-list
+│ │ ├─┬ @ant-design/icons@5.0.1 -> .\node_modules\.pnpm\@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y\node_modules\@ant-design\icons
+│ │ │ └── react@18.2.0 deduped invalid: "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-card@2.3.2 -> .\node_modules\.pnpm\@ant-design+pro-card@2.3.2_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-card
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-field@2.5.2 -> .\node_modules\.pnpm\@ant-design+pro-field@2.5.2_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-field
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-table@3.6.1 -> .\node_modules\.pnpm\@ant-design+pro-table@3.6.1_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-table
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ antd@5.3.3 -> .\node_modules\.pnpm\antd@5.3.3_biqbaboplfbrettd7655fr4n2y\node_modules\antd
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-resize-observer@1.3.1 -> .\node_modules\.pnpm\rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-resize-observer
+│ │ │ └── react@18.2.0 deduped invalid: "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@4.21.1 -> .\node_modules\.pnpm\rc-util@4.21.1\node_modules\rc-util
+│ │ │ ├─┬ prop-types@15.8.1 -> .\node_modules\.pnpm\prop-types@15.8.1\node_modules\prop-types
+│ │ │ │ └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^16.2.0" from node_modules/.pnpm/rc-util@4.21.1/node_modules/rc-util, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ │ └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^16.2.0" from node_modules/.pnpm/rc-util@4.21.1/node_modules/rc-util -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └─┬ use-media-antd-query@1.1.0 -> .\node_modules\.pnpm\use-media-antd-query@1.1.0_react@18.2.0\node_modules\use-media-antd-query
+│ │   └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ @ant-design/pro-provider@2.7.0 -> .\node_modules\.pnpm\@ant-design+pro-provider@2.7.0_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-provider
+│ │ ├─┬ @ant-design/cssinjs@1.7.1 -> .\node_modules\.pnpm\@ant-design+cssinjs@1.7.1_biqbaboplfbrettd7655fr4n2y\node_modules\@ant-design\cssinjs
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ antd@5.3.3 -> .\node_modules\.pnpm\antd@5.3.3_biqbaboplfbrettd7655fr4n2y\node_modules\antd
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └─┬ swr@2.1.1 -> .\node_modules\.pnpm\swr@2.1.1_react@18.2.0\node_modules\swr
+│ │   └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ @ant-design/pro-skeleton@2.1.0 -> .\node_modules\.pnpm\@ant-design+pro-skeleton@2.1.0_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-skeleton
+│ │ ├─┬ antd@5.3.3 -> .\node_modules\.pnpm\antd@5.3.3_biqbaboplfbrettd7655fr4n2y\node_modules\antd
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └─┬ use-media-antd-query@1.1.0 -> .\node_modules\.pnpm\use-media-antd-query@1.1.0_react@18.2.0\node_modules\use-media-antd-query
+│ │   └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ @ant-design/pro-table@3.6.1 -> .\node_modules\.pnpm\@ant-design+pro-table@3.6.1_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-table
+│ │ ├─┬ @ant-design/icons@5.0.1 -> .\node_modules\.pnpm\@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y\node_modules\@ant-design\icons
+│ │ │ └── react@18.2.0 deduped invalid: "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-card@2.3.2 -> .\node_modules\.pnpm\@ant-design+pro-card@2.3.2_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-card
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-field@2.5.2 -> .\node_modules\.pnpm\@ant-design+pro-field@2.5.2_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-field
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-form@2.10.1 -> .\node_modules\.pnpm\@ant-design+pro-form@2.10.1_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-form
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-provider@2.7.0 -> .\node_modules\.pnpm\@ant-design+pro-provider@2.7.0_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-provider
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-utils@2.7.2 -> .\node_modules\.pnpm\@ant-design+pro-utils@2.7.2_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-utils
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ antd@5.3.3 -> .\node_modules\.pnpm\antd@5.3.3_biqbaboplfbrettd7655fr4n2y\node_modules\antd
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-resize-observer@1.3.1 -> .\node_modules\.pnpm\rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-resize-observer
+│ │ │ └── react@18.2.0 deduped invalid: "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-sortable-hoc@2.0.0 -> .\node_modules\.pnpm\react-sortable-hoc@2.0.0_biqbaboplfbrettd7655fr4n2y\node_modules\react-sortable-hoc
+│ │ │ ├─┬ prop-types@15.8.1 -> .\node_modules\.pnpm\prop-types@15.8.1\node_modules\prop-types
+│ │ │ │ └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^16.2.0" from node_modules/.pnpm/rc-util@4.21.1/node_modules/rc-util, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ │ ├─┬ react-dom@18.2.0 invalid: "^16.7.0" from node_modules/.pnpm/react-sortable-hoc@2.0.0_biqbaboplfbrettd7655fr4n2y/node_modules/react-sortable-hoc, "^16.7.0" from node_modules/.pnpm/react-sortable-hoc@2.0.0_biqbaboplfbrettd7655fr4n2y/node_modules/react-sortable-hoc -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ │ └── react@18.2.0 invalid: "^16.7.0" from node_modules/.pnpm/react-sortable-hoc@2.0.0_biqbaboplfbrettd7655fr4n2y/node_modules/react-sortable-hoc, "^16.7.0" from node_modules/.pnpm/react-sortable-hoc@2.0.0_biqbaboplfbrettd7655fr4n2y/node_modules/react-sortable-hoc -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └─┬ use-json-comparison@1.0.6 -> .\node_modules\.pnpm\use-json-comparison@1.0.6_react@18.2.0\node_modules\use-json-comparison
+│ │   └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ @ant-design/pro-utils@2.7.2 -> .\node_modules\.pnpm\@ant-design+pro-utils@2.7.2_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-utils
+│ │ ├─┬ @ant-design/icons@4.8.0 -> .\node_modules\.pnpm\@ant-design+icons@4.8.0_biqbaboplfbrettd7655fr4n2y\node_modules\@ant-design\icons
+│ │ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ │ ├─┬ react-dom@18.2.0 invalid: "^16.4.2" from node_modules/.pnpm/@ant-design+icons@4.8.0_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ │ └── react@18.2.0 invalid: "^16.4.2" from node_modules/.pnpm/@ant-design+icons@4.8.0_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @ant-design/pro-provider@2.7.0 -> .\node_modules\.pnpm\@ant-design+pro-provider@2.7.0_yqafbpanm4rjwdjr4iy3j5y7cm\node_modules\@ant-design\pro-provider
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ antd@5.3.3 -> .\node_modules\.pnpm\antd@5.3.3_biqbaboplfbrettd7655fr4n2y\node_modules\antd
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-sortable-hoc@2.0.0 -> .\node_modules\.pnpm\react-sortable-hoc@2.0.0_biqbaboplfbrettd7655fr4n2y\node_modules\react-sortable-hoc
+│ │ │ └── react@18.2.0 deduped invalid: "^16.7.0" from node_modules/.pnpm/react-sortable-hoc@2.0.0_biqbaboplfbrettd7655fr4n2y/node_modules/react-sortable-hoc, "^16.7.0" from node_modules/.pnpm/react-sortable-hoc@2.0.0_biqbaboplfbrettd7655fr4n2y/node_modules/react-sortable-hoc -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └─┬ swr@2.1.1 -> .\node_modules\.pnpm\swr@2.1.1_react@18.2.0\node_modules\swr
+│ │   └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ antd@5.3.3 -> .\node_modules\.pnpm\antd@5.3.3_biqbaboplfbrettd7655fr4n2y\node_modules\antd
+│ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+├─┬ @apollo/client@3.7.10 -> .\node_modules\.pnpm\@apollo+client@3.7.10_wxfjnvblbhu4ianu4f2qg722fu\node_modules\@apollo\client
+│ ├─┬ hoist-non-react-statics@3.3.2 -> .\node_modules\.pnpm\hoist-non-react-statics@3.3.2\node_modules\hoist-non-react-statics
+│ │ ├─┬ prop-types@15.8.1 -> .\node_modules\.pnpm\prop-types@15.8.1\node_modules\prop-types
+│ │ │ └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^16.2.0" from node_modules/.pnpm/rc-util@4.21.1/node_modules/rc-util, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ jest@25.5.4 invalid: "29.3.1" from node_modules/.pnpm/@apollo+client@3.7.10_wxfjnvblbhu4ianu4f2qg722fu/node_modules/@apollo/client, "29.3.1" from node_modules/.pnpm/@as-integrations+next@1.2.0_muqjbpjoiwgmavcrilagq3zl7m/node_modules/@as-integrations/next, "29.4.1" from node_modules/.pnpm/@prisma+client@4.11.0_prisma@4.11.0/node_modules/@prisma/client, "^29.4.1" from node_modules/.pnpm/antd@5.3.3_biqbaboplfbrettd7655fr4n2y/node_modules/antd, "^22.4.3" from node_modules/.pnpm/dayjs@1.11.7/node_modules/dayjs, "^27.2.0" from node_modules/.pnpm/next-graphql@2.3.5_encoding@0.1.13/node_modules/next-graphql, "29.4.1" from node_modules/.pnpm/prisma@4.11.0/node_modules/prisma, "^26.4.2" from node_modules/.pnpm/type-graphql@1.1.1_yxlhq5elwzdhphazhcbwh6wmlq/node_modules/type-graphql, "^28.1.3" from node_modules/.pnpm/typegraphql-prisma@0.23.2_5y3urbdbkcjeuamo5yi6f5lsoq/node_modules/typegraphql-prisma, "^26.0.1" from node_modules/.pnpm/@ant-design+colors@7.0.0/node_modules/@ant-design/colors, "^29.4.1" from node_modules/.pnpm/antd@5.3.3_biqbaboplfbrettd7655fr4n2y/node_modules/antd -> .\node_modules\.pnpm\jest@25.5.4\node_modules\jest
+│ │ └─┬ @jest/core@25.5.4 -> .\node_modules\.pnpm\@jest+core@25.5.4\node_modules\@jest\core
+│ │   ├─┬ @jest/reporters@25.5.1 -> .\node_modules\.pnpm\@jest+reporters@25.5.1\node_modules\@jest\reporters
+│ │   │ └─┬ istanbul-reports@3.1.5 -> .\node_modules\.pnpm\istanbul-reports@3.1.5\node_modules\istanbul-reports
+│ │   │   └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^16.2.0" from node_modules/.pnpm/rc-util@4.21.1/node_modules/rc-util, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "16.x" from node_modules/.pnpm/dom-align@1.12.4/node_modules/dom-align, "^16.12.0" from 
+node_modules/.pnpm/istanbul-reports@3.1.5/node_modules/istanbul-reports -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │   ├─┬ jest-config@25.5.4 -> .\node_modules\.pnpm\jest-config@25.5.4\node_modules\jest-config
+│ │   │ └─┬ pretty-format@25.5.0 -> .\node_modules\.pnpm\pretty-format@25.5.0\node_modules\pretty-format
+│ │   │   └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^16.2.0" from node_modules/.pnpm/rc-util@4.21.1/node_modules/rc-util, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "16.x" from node_modules/.pnpm/dom-align@1.12.4/node_modules/dom-align, "^16.12.0" from 
+node_modules/.pnpm/istanbul-reports@3.1.5/node_modules/istanbul-reports -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │   └─┬ jest-validate@25.5.0 -> .\node_modules\.pnpm\jest-validate@25.5.0\node_modules\jest-validate
+│ │     └─┬ pretty-format@25.5.0 -> .\node_modules\.pnpm\pretty-format@25.5.0\node_modules\pretty-format
+│ │       └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^16.2.0" from node_modules/.pnpm/rc-util@4.21.1/node_modules/rc-util, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "16.x" from node_modules/.pnpm/dom-align@1.12.4/node_modules/dom-align, "^16.12.0" from 
+node_modules/.pnpm/istanbul-reports@3.1.5/node_modules/istanbul-reports -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ prop-types@15.8.1 -> .\node_modules\.pnpm\prop-types@15.8.1\node_modules\prop-types
+│ │ └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+├─┬ @as-integrations/next@1.2.0 -> .\node_modules\.pnpm\@as-integrations+next@1.2.0_muqjbpjoiwgmavcrilagq3zl7m\node_modules\@as-integrations\next
+│ └─┬ next@13.2.4 -> .\node_modules\.pnpm\next@13.2.4_biqbaboplfbrettd7655fr4n2y\node_modules\next
+│   └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+├─┬ @prisma/client@4.11.0 -> .\node_modules\.pnpm\@prisma+client@4.11.0_prisma@4.11.0\node_modules\@prisma\client
+│ ├─┬ @jest/test-sequencer@25.5.4 invalid: "29.4.1" from node_modules/.pnpm/@prisma+client@4.11.0_prisma@4.11.0/node_modules/@prisma/client, "29.4.1" from node_modules/.pnpm/@prisma+client@4.11.0_prisma@4.11.0/node_modules/@prisma/client -> .\node_modules\.pnpm\@jest+test-sequencer@25.5.4\node_modules\@jest\test-sequencer
+│ │ └─┬ jest-runner@25.5.4 -> .\node_modules\.pnpm\jest-runner@25.5.4\node_modules\jest-runner
+│ │   ├─┬ jest-jasmine2@25.5.4 -> .\node_modules\.pnpm\jest-jasmine2@25.5.4\node_modules\jest-jasmine2
+│ │   │ ├─┬ jest-each@25.5.0 -> .\node_modules\.pnpm\jest-each@25.5.0\node_modules\jest-each
+│ │   │ │ └─┬ pretty-format@25.5.0 -> .\node_modules\.pnpm\pretty-format@25.5.0\node_modules\pretty-format
+│ │   │ │   └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^16.2.0" from node_modules/.pnpm/rc-util@4.21.1/node_modules/rc-util, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "16.x" from node_modules/.pnpm/dom-align@1.12.4/node_modules/dom-align, "^16.12.0" from node_modules/.pnpm/istanbul-reports@3.1.5/node_modules/istanbul-reports, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │   │ └─┬ pretty-format@25.5.0 -> .\node_modules\.pnpm\pretty-format@25.5.0\node_modules\pretty-format
+│ │   │   └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^16.2.0" from node_modules/.pnpm/rc-util@4.21.1/node_modules/rc-util, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "16.x" from node_modules/.pnpm/dom-align@1.12.4/node_modules/dom-align, "^16.12.0" from 
+node_modules/.pnpm/istanbul-reports@3.1.5/node_modules/istanbul-reports -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │   └─┬ jest-leak-detector@25.5.0 -> .\node_modules\.pnpm\jest-leak-detector@25.5.0\node_modules\jest-leak-detector
+│ │     └─┬ pretty-format@25.5.0 -> .\node_modules\.pnpm\pretty-format@25.5.0\node_modules\pretty-format
+│ │       └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^16.2.0" from node_modules/.pnpm/rc-util@4.21.1/node_modules/rc-util, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "16.x" from node_modules/.pnpm/dom-align@1.12.4/node_modules/dom-align, "^16.12.0" from 
+node_modules/.pnpm/istanbul-reports@3.1.5/node_modules/istanbul-reports -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ └─┬ jest-snapshot@25.5.1 invalid: "29.4.1" from node_modules/.pnpm/@prisma+client@4.11.0_prisma@4.11.0/node_modules/@prisma/client, "29.4.1" from node_modules/.pnpm/@prisma+client@4.11.0_prisma@4.11.0/node_modules/@prisma/client -> .\node_modules\.pnpm\jest-snapshot@25.5.1\node_modules\jest-snapshot
+│   ├─┬ jest-matcher-utils@25.5.0 -> .\node_modules\.pnpm\jest-matcher-utils@25.5.0\node_modules\jest-matcher-utils
+│   │ └─┬ pretty-format@25.5.0 -> .\node_modules\.pnpm\pretty-format@25.5.0\node_modules\pretty-format
+│   │   └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^16.2.0" from node_modules/.pnpm/rc-util@4.21.1/node_modules/rc-util, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│   └─┬ pretty-format@25.5.0 -> .\node_modules\.pnpm\pretty-format@25.5.0\node_modules\pretty-format
+│     └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^16.2.0" from node_modules/.pnpm/rc-util@4.21.1/node_modules/rc-util, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+├─┬ antd@5.3.3 invalid: "^4.8.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons -> .\node_modules\.pnpm\antd@5.3.3_biqbaboplfbrettd7655fr4n2y\node_modules\antd
+│ ├─┬ @ant-design/cssinjs@1.7.1 -> .\node_modules\.pnpm\@ant-design+cssinjs@1.7.1_biqbaboplfbrettd7655fr4n2y\node_modules\@ant-design\cssinjs
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ @ant-design/icons@5.0.1 -> .\node_modules\.pnpm\@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y\node_modules\@ant-design\icons
+│ │ └── react@18.2.0 deduped invalid: "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ @ant-design/react-slick@1.0.0 -> .\node_modules\.pnpm\@ant-design+react-slick@1.0.0_react@18.2.0\node_modules\@ant-design\react-slick
+│ │ └── react@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/@ant-design+react-slick@1.0.0_react@18.2.0/node_modules/@ant-design/react-slick -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ @rc-component/mutate-observer@1.0.0 -> .\node_modules\.pnpm\@rc-component+mutate-observer@1.0.0_biqbaboplfbrettd7655fr4n2y\node_modules\@rc-component\mutate-observer
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ @rc-component/tour@1.8.0 -> .\node_modules\.pnpm\@rc-component+tour@1.8.0_biqbaboplfbrettd7655fr4n2y\node_modules\@rc-component\tour
+│ │ ├─┬ @rc-component/portal@1.1.1 -> .\node_modules\.pnpm\@rc-component+portal@1.1.1_biqbaboplfbrettd7655fr4n2y\node_modules\@rc-component\portal
+│ │ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @rc-component/trigger@1.6.2 -> .\node_modules\.pnpm\@rc-component+trigger@1.6.2_biqbaboplfbrettd7655fr4n2y\node_modules\@rc-component\trigger
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ @rc-component/trigger@1.6.2 -> .\node_modules\.pnpm\@rc-component+trigger@1.6.2_biqbaboplfbrettd7655fr4n2y\node_modules\@rc-component\trigger
+│ │ ├─┬ @rc-component/portal@1.1.1 -> .\node_modules\.pnpm\@rc-component+portal@1.1.1_biqbaboplfbrettd7655fr4n2y\node_modules\@rc-component\portal
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-align@4.0.15 -> .\node_modules\.pnpm\rc-align@4.0.15_biqbaboplfbrettd7655fr4n2y\node_modules\rc-align
+│ │ │ ├─┬ dom-align@1.12.4 -> .\node_modules\.pnpm\dom-align@1.12.4\node_modules\dom-align
+│ │ │ │ └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^16.2.0" from node_modules/.pnpm/rc-util@4.21.1/node_modules/rc-util, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "16.x" from node_modules/.pnpm/dom-align@1.12.4/node_modules/dom-align -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-motion@2.6.3 -> .\node_modules\.pnpm\rc-motion@2.6.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-motion
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-resize-observer@1.3.1 -> .\node_modules\.pnpm\rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-resize-observer
+│ │ │ └── react@18.2.0 deduped invalid: "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ eslint-plugin-react@7.32.2 invalid: "7.24.0" from node_modules/.pnpm/async-retry@1.3.3/node_modules/async-retry, "7.21.5" from node_modules/.pnpm/eslint-config-prettier@6.15.0_eslint@6.8.0/node_modules/eslint-config-prettier -> .\node_modules\.pnpm\eslint-plugin-react@7.32.2_eslint@6.8.0\node_modules\eslint-plugin-react
+│ │ └─┬ prop-types@15.8.1 -> .\node_modules\.pnpm\prop-types@15.8.1\node_modules\prop-types
+│ │   └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^16.2.0" from node_modules/.pnpm/rc-util@4.21.1/node_modules/rc-util, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ pretty-format@25.5.0 invalid: "^29.0.0" from node_modules/.pnpm/antd@5.3.3_biqbaboplfbrettd7655fr4n2y/node_modules/antd, "^29.0.0" from node_modules/.pnpm/antd@5.3.3_biqbaboplfbrettd7655fr4n2y/node_modules/antd -> .\node_modules\.pnpm\pretty-format@25.5.0\node_modules\pretty-format
+│ │ └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ qrcode.react@3.1.0 -> .\node_modules\.pnpm\qrcode.react@3.1.0_react@18.2.0\node_modules\qrcode.react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-cascader@3.9.1 -> .\node_modules\.pnpm\rc-cascader@3.9.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-cascader
+│ │ ├─┬ @rc-component/trigger@1.6.2 -> .\node_modules\.pnpm\@rc-component+trigger@1.6.2_biqbaboplfbrettd7655fr4n2y\node_modules\@rc-component\trigger
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-select@14.3.0 -> .\node_modules\.pnpm\rc-select@14.3.0_biqbaboplfbrettd7655fr4n2y\node_modules\rc-select
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-tree@5.7.3 -> .\node_modules\.pnpm\rc-tree@5.7.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-tree
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-cascader@3.9.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-cascader -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-cascader@3.9.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-cascader -> .\node_modules\.pnpm\react@18.2.0\node_modules\react 
+│ ├─┬ rc-checkbox@2.3.2 -> .\node_modules\.pnpm\rc-checkbox@2.3.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-checkbox
+│ │ ├─┬ react-dom@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-checkbox@2.3.2_biqbaboplfbrettd7655fr4n2y/node_modules/rc-checkbox -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-checkbox@2.3.2_biqbaboplfbrettd7655fr4n2y/node_modules/rc-checkbox -> .\node_modules\.pnpm\react@18.2.0\node_modules\react 
+│ ├─┬ rc-collapse@3.5.2 -> .\node_modules\.pnpm\rc-collapse@3.5.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-collapse
+│ │ ├─┬ rc-motion@2.6.3 -> .\node_modules\.pnpm\rc-motion@2.6.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-motion
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-dialog@9.0.2 -> .\node_modules\.pnpm\rc-dialog@9.0.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-dialog
+│ │ ├─┬ @rc-component/portal@1.1.1 -> .\node_modules\.pnpm\@rc-component+portal@1.1.1_biqbaboplfbrettd7655fr4n2y\node_modules\@rc-component\portal
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-drawer@6.1.5 invalid: "^4.4.0" from node_modules/.pnpm/rc-dialog@9.0.2_biqbaboplfbrettd7655fr4n2y/node_modules/rc-dialog -> .\node_modules\.pnpm\rc-drawer@6.1.5_biqbaboplfbrettd7655fr4n2y\node_modules\rc-drawer
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-motion@2.6.3 -> .\node_modules\.pnpm\rc-motion@2.6.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-motion
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-select@14.3.0 invalid: "^12.1.13" from node_modules/.pnpm/rc-dialog@9.0.2_biqbaboplfbrettd7655fr4n2y/node_modules/rc-dialog -> .\node_modules\.pnpm\rc-select@14.3.0_biqbaboplfbrettd7655fr4n2y\node_modules\rc-select
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 invalid: "^16.9.0" from node_modules/.pnpm/rc-dialog@9.0.2_biqbaboplfbrettd7655fr4n2y/node_modules/rc-dialog -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 invalid: "^16.9.0" from node_modules/.pnpm/rc-dialog@9.0.2_biqbaboplfbrettd7655fr4n2y/node_modules/rc-dialog -> .\node_modules\.pnpm\react@18.2.0\node_modules\react     
+│ ├─┬ rc-drawer@6.1.5 -> .\node_modules\.pnpm\rc-drawer@6.1.5_biqbaboplfbrettd7655fr4n2y\node_modules\rc-drawer
+│ │ ├─┬ @ant-design/icons@5.0.1 invalid: "^4.7.0" from node_modules/.pnpm/rc-drawer@6.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/rc-drawer, "^4.7.0" from node_modules/.pnpm/rc-drawer@6.1.5_biqbaboplfbrettd7655fr4n2y/node_modules/rc-drawer -> .\node_modules\.pnpm\@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y\node_modules\@ant-design\icons
+│ │ │ └── react@18.2.0 deduped invalid: "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons, "^16.4.2" from node_modules/.pnpm/@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/@ant-design/icons -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ @rc-component/portal@1.1.1 -> .\node_modules\.pnpm\@rc-component+portal@1.1.1_biqbaboplfbrettd7655fr4n2y\node_modules\@rc-component\portal
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-motion@2.6.3 -> .\node_modules\.pnpm\rc-motion@2.6.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-motion
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-dropdown@4.0.1 -> .\node_modules\.pnpm\rc-dropdown@4.0.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-dropdown
+│ │ ├─┬ rc-menu@9.8.3 invalid: "~9.6.0" from node_modules/.pnpm/rc-table@7.31.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-table -> .\node_modules\.pnpm\rc-menu@9.8.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-menu
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-trigger@5.3.4 -> .\node_modules\.pnpm\rc-trigger@5.3.4_biqbaboplfbrettd7655fr4n2y\node_modules\rc-trigger
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 invalid: "^16.11.0" from node_modules/.pnpm/rc-dropdown@4.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-dropdown -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 invalid: "^16.11.0" from node_modules/.pnpm/rc-dropdown@4.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-dropdown -> .\node_modules\.pnpm\react@18.2.0\node_modules\react│ ├─┬ rc-field-form@1.28.0 -> .\node_modules\.pnpm\rc-field-form@1.28.0_biqbaboplfbrettd7655fr4n2y\node_modules\rc-field-form
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 invalid: "^16.14.0" from node_modules/.pnpm/rc-field-form@1.28.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-field-form, "^16.14.0" from node_modules/.pnpm/rc-field-form@1.28.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-field-form -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 invalid: "^16.14.0" from node_modules/.pnpm/rc-field-form@1.28.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-field-form, "^16.14.0" from node_modules/.pnpm/rc-field-form@1.28.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-field-form -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-image@5.15.2 -> .\node_modules\.pnpm\rc-image@5.15.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-image
+│ │ ├─┬ @rc-component/portal@1.1.1 -> .\node_modules\.pnpm\@rc-component+portal@1.1.1_biqbaboplfbrettd7655fr4n2y\node_modules\@rc-component\portal
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-dialog@9.0.2 -> .\node_modules\.pnpm\rc-dialog@9.0.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-dialog
+│ │ │ └── react@18.2.0 deduped invalid: "^16.9.0" from node_modules/.pnpm/rc-dialog@9.0.2_biqbaboplfbrettd7655fr4n2y/node_modules/rc-dialog, "^16.9.0" from node_modules/.pnpm/rc-dialog@9.0.2_biqbaboplfbrettd7655fr4n2y/node_modules/rc-dialog -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-motion@2.6.3 -> .\node_modules\.pnpm\rc-motion@2.6.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-motion
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-input-number@7.4.2 -> .\node_modules\.pnpm\rc-input-number@7.4.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-input-number
+│ │ ├─┬ @rc-component/mini-decimal@1.0.1 -> .\node_modules\.pnpm\@rc-component+mini-decimal@1.0.1\node_modules\@rc-component\mini-decimal
+│ │ │ └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^16.2.0" from node_modules/.pnpm/rc-util@4.21.1/node_modules/rc-util, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-tooltip@6.0.1 invalid: "^5.0.2" from node_modules/.pnpm/rc-input-number@7.4.2_biqbaboplfbrettd7655fr4n2y/node_modules/rc-input-number, "^5.0.1" from node_modules/.pnpm/rc-rate@2.10.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-rate, "^5.0.1" from node_modules/.pnpm/rc-slider@10.1.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-slider, "^5.2.1" from node_modules/.pnpm/rc-table@7.31.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-table, "5.x" from node_modules/.pnpm/rc-tree@5.7.3_biqbaboplfbrettd7655fr4n2y/node_modules/rc-tree, "5.x" from node_modules/.pnpm/rc-tree@5.7.3_biqbaboplfbrettd7655fr4n2y/node_modules/rc-tree -> .\node_modules\.pnpm\rc-tooltip@6.0.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-tooltip
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-input@0.2.2 -> .\node_modules\.pnpm\rc-input@0.2.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-input
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-mentions@2.1.0 -> .\node_modules\.pnpm\rc-mentions@2.1.0_biqbaboplfbrettd7655fr4n2y\node_modules\rc-mentions
+│ │ ├─┬ @rc-component/trigger@1.6.2 -> .\node_modules\.pnpm\@rc-component+trigger@1.6.2_biqbaboplfbrettd7655fr4n2y\node_modules\@rc-component\trigger
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-input@0.2.2 -> .\node_modules\.pnpm\rc-input@0.2.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-input
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-menu@9.8.3 -> .\node_modules\.pnpm\rc-menu@9.8.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-menu
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-textarea@1.1.0 -> .\node_modules\.pnpm\rc-textarea@1.1.0_biqbaboplfbrettd7655fr4n2y\node_modules\rc-textarea
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-menu@9.8.3 -> .\node_modules\.pnpm\rc-menu@9.8.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-menu
+│ │ ├─┬ rc-motion@2.6.3 -> .\node_modules\.pnpm\rc-motion@2.6.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-motion
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-overflow@1.3.0 -> .\node_modules\.pnpm\rc-overflow@1.3.0_biqbaboplfbrettd7655fr4n2y\node_modules\rc-overflow
+│ │ │ ├─┬ rc-resize-observer@1.3.1 -> .\node_modules\.pnpm\rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-resize-observer
+│ │ │ │ └── react@18.2.0 deduped invalid: "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ │ ├─┬ react-dom@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-overflow@1.3.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-overflow, "^16.0.0" from node_modules/.pnpm/rc-overflow@1.3.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-overflow -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ │ └── react@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-overflow@1.3.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-overflow, "^16.0.0" from node_modules/.pnpm/rc-overflow@1.3.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-overflow -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-trigger@5.3.4 -> .\node_modules\.pnpm\rc-trigger@5.3.4_biqbaboplfbrettd7655fr4n2y\node_modules\rc-trigger
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-motion@2.6.3 -> .\node_modules\.pnpm\rc-motion@2.6.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-motion
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-notification@5.0.3 -> .\node_modules\.pnpm\rc-notification@5.0.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-notification
+│ │ ├─┬ rc-motion@2.6.3 -> .\node_modules\.pnpm\rc-motion@2.6.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-motion
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-pagination@3.3.1 -> .\node_modules\.pnpm\rc-pagination@3.3.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-pagination
+│ │ ├─┬ react-dom@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-pagination@3.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-pagination -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-pagination@3.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-pagination -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-picker@3.3.4 -> .\node_modules\.pnpm\rc-picker@3.3.4_mlnkrlbros4rghcauwy625gk7y\node_modules\rc-picker
+│ │ ├─┬ @rc-component/trigger@1.6.2 -> .\node_modules\.pnpm\@rc-component+trigger@1.6.2_biqbaboplfbrettd7655fr4n2y\node_modules\@rc-component\trigger
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 invalid: "^17.0.0" from node_modules/.pnpm/rc-picker@3.3.4_mlnkrlbros4rghcauwy625gk7y/node_modules/rc-picker -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 invalid: "^17.0.0" from node_modules/.pnpm/rc-picker@3.3.4_mlnkrlbros4rghcauwy625gk7y/node_modules/rc-picker -> .\node_modules\.pnpm\react@18.2.0\node_modules\react     
+│ ├─┬ rc-progress@3.4.1 -> .\node_modules\.pnpm\rc-progress@3.4.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-progress
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 invalid: "^17.0.2" from node_modules/.pnpm/rc-progress@3.4.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-progress -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 invalid: "^17.0.2" from node_modules/.pnpm/rc-progress@3.4.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-progress -> .\node_modules\.pnpm\react@18.2.0\node_modules\react 
+│ ├─┬ rc-rate@2.10.0 -> .\node_modules\.pnpm\rc-rate@2.10.0_biqbaboplfbrettd7655fr4n2y\node_modules\rc-rate
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-rate@2.10.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-rate -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-rate@2.10.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-rate -> .\node_modules\.pnpm\react@18.2.0\node_modules\react        
+│ ├─┬ rc-resize-observer@1.3.1 -> .\node_modules\.pnpm\rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-resize-observer
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-segmented@2.1.2 -> .\node_modules\.pnpm\rc-segmented@2.1.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-segmented
+│ │ ├─┬ rc-motion@2.6.3 -> .\node_modules\.pnpm\rc-motion@2.6.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-motion
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-select@14.3.0 -> .\node_modules\.pnpm\rc-select@14.3.0_biqbaboplfbrettd7655fr4n2y\node_modules\rc-select
+│ │ ├─┬ @rc-component/trigger@1.6.2 -> .\node_modules\.pnpm\@rc-component+trigger@1.6.2_biqbaboplfbrettd7655fr4n2y\node_modules\@rc-component\trigger
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-dialog@9.0.2 invalid: "8.x" from node_modules/.pnpm/rc-steps@6.0.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-steps, "^7.5.7" from node_modules/.pnpm/rc-tree-select@5.7.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-tree-select, "^8.1.0" from node_modules/.pnpm/rc-tree@5.7.3_biqbaboplfbrettd7655fr4n2y/node_modules/rc-tree, "^8.1.0" from node_modules/.pnpm/rc-tree@5.7.3_biqbaboplfbrettd7655fr4n2y/node_modules/rc-tree -> .\node_modules\.pnpm\rc-dialog@9.0.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-dialog
+│ │ │ └── react@18.2.0 deduped invalid: "^16.9.0" from node_modules/.pnpm/rc-dialog@9.0.2_biqbaboplfbrettd7655fr4n2y/node_modules/rc-dialog, "^16.9.0" from node_modules/.pnpm/rc-dialog@9.0.2_biqbaboplfbrettd7655fr4n2y/node_modules/rc-dialog, "^16.9.0" from node_modules/.pnpm/rc-dialog@9.0.2_biqbaboplfbrettd7655fr4n2y/node_modules/rc-dialog -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-motion@2.6.3 -> .\node_modules\.pnpm\rc-motion@2.6.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-motion
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-overflow@1.3.0 -> .\node_modules\.pnpm\rc-overflow@1.3.0_biqbaboplfbrettd7655fr4n2y\node_modules\rc-overflow
+│ │ │ └── react@18.2.0 deduped invalid: "^16.0.0" from node_modules/.pnpm/rc-overflow@1.3.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-overflow, "^16.0.0" from node_modules/.pnpm/rc-overflow@1.3.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-overflow -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-virtual-list@3.4.13 -> .\node_modules\.pnpm\rc-virtual-list@3.4.13_biqbaboplfbrettd7655fr4n2y\node_modules\rc-virtual-list
+│ │ │ └── react@18.2.0 deduped invalid: "^v16.9.0-alpha.0" from node_modules/.pnpm/rc-virtual-list@3.4.13_biqbaboplfbrettd7655fr4n2y/node_modules/rc-virtual-list, "^v16.9.0-alpha.0" from node_modules/.pnpm/rc-virtual-list@3.4.13_biqbaboplfbrettd7655fr4n2y/node_modules/rc-virtual-list -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-slider@10.1.1 -> .\node_modules\.pnpm\rc-slider@10.1.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-slider
+│ │ ├─┬ rc-trigger@5.3.4 -> .\node_modules\.pnpm\rc-trigger@5.3.4_biqbaboplfbrettd7655fr4n2y\node_modules\rc-trigger
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-slider@10.1.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-slider -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-slider@10.1.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-slider -> .\node_modules\.pnpm\react@18.2.0\node_modules\react    
+│ ├─┬ rc-steps@6.0.0 -> .\node_modules\.pnpm\rc-steps@6.0.0_biqbaboplfbrettd7655fr4n2y\node_modules\rc-steps
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-steps@6.0.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-steps -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-steps@6.0.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-steps -> .\node_modules\.pnpm\react@18.2.0\node_modules\react       
+│ ├─┬ rc-switch@4.0.0 -> .\node_modules\.pnpm\rc-switch@4.0.0_biqbaboplfbrettd7655fr4n2y\node_modules\rc-switch
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-switch@4.0.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-switch -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-switch@4.0.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-switch -> .\node_modules\.pnpm\react@18.2.0\node_modules\react     
+│ ├─┬ rc-table@7.31.1 -> .\node_modules\.pnpm\rc-table@7.31.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-table
+│ │ ├─┬ @rc-component/context@1.3.0 -> .\node_modules\.pnpm\@rc-component+context@1.3.0_biqbaboplfbrettd7655fr4n2y\node_modules\@rc-component\context
+│ │ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-dropdown@4.0.1 -> .\node_modules\.pnpm\rc-dropdown@4.0.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-dropdown
+│ │ │ └── react@18.2.0 deduped invalid: "^16.11.0" from node_modules/.pnpm/rc-dropdown@4.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-dropdown, "^16.11.0" from node_modules/.pnpm/rc-dropdown@4.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-dropdown -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-resize-observer@1.3.1 -> .\node_modules\.pnpm\rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-resize-observer
+│ │ │ └── react@18.2.0 deduped invalid: "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-table@7.31.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-table -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-table@7.31.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-table -> .\node_modules\.pnpm\react@18.2.0\node_modules\react      
+│ ├─┬ rc-tabs@12.5.10 -> .\node_modules\.pnpm\rc-tabs@12.5.10_biqbaboplfbrettd7655fr4n2y\node_modules\rc-tabs
+│ │ ├─┬ rc-dropdown@4.0.1 -> .\node_modules\.pnpm\rc-dropdown@4.0.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-dropdown
+│ │ │ └── react@18.2.0 deduped invalid: "^16.11.0" from node_modules/.pnpm/rc-dropdown@4.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-dropdown, "^16.11.0" from node_modules/.pnpm/rc-dropdown@4.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-dropdown, "^16.11.0" from node_modules/.pnpm/rc-dropdown@4.0.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-dropdown -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-menu@9.8.3 -> .\node_modules\.pnpm\rc-menu@9.8.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-menu
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-motion@2.6.3 -> .\node_modules\.pnpm\rc-motion@2.6.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-motion
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-resize-observer@1.3.1 -> .\node_modules\.pnpm\rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-resize-observer
+│ │ │ └── react@18.2.0 deduped invalid: "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-textarea@1.1.0 -> .\node_modules\.pnpm\rc-textarea@1.1.0_biqbaboplfbrettd7655fr4n2y\node_modules\rc-textarea
+│ │ ├─┬ rc-input@0.2.2 -> .\node_modules\.pnpm\rc-input@0.2.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-input
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-resize-observer@1.3.1 -> .\node_modules\.pnpm\rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-resize-observer
+│ │ │ └── react@18.2.0 deduped invalid: "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-tooltip@6.0.1 -> .\node_modules\.pnpm\rc-tooltip@6.0.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-tooltip
+│ │ ├─┬ @rc-component/trigger@1.6.2 -> .\node_modules\.pnpm\@rc-component+trigger@1.6.2_biqbaboplfbrettd7655fr4n2y\node_modules\@rc-component\trigger
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-tree-select@5.7.0 -> .\node_modules\.pnpm\rc-tree-select@5.7.0_biqbaboplfbrettd7655fr4n2y\node_modules\rc-tree-select
+│ │ ├─┬ rc-select@14.3.0 -> .\node_modules\.pnpm\rc-select@14.3.0_biqbaboplfbrettd7655fr4n2y\node_modules\rc-select
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-tree@5.7.3 -> .\node_modules\.pnpm\rc-tree@5.7.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-tree
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 invalid: "^16.8.0" from node_modules/.pnpm/rc-tree-select@5.7.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-tree-select -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 invalid: "^16.8.0" from node_modules/.pnpm/rc-tree-select@5.7.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-tree-select -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-tree@5.7.3 -> .\node_modules\.pnpm\rc-tree@5.7.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-tree
+│ │ ├─┬ rc-motion@2.6.3 -> .\node_modules\.pnpm\rc-motion@2.6.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-motion
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-virtual-list@3.4.13 -> .\node_modules\.pnpm\rc-virtual-list@3.4.13_biqbaboplfbrettd7655fr4n2y\node_modules\rc-virtual-list
+│ │ │ └── react@18.2.0 deduped invalid: "^v16.9.0-alpha.0" from node_modules/.pnpm/rc-virtual-list@3.4.13_biqbaboplfbrettd7655fr4n2y/node_modules/rc-virtual-list, "^v16.9.0-alpha.0" from node_modules/.pnpm/rc-virtual-list@3.4.13_biqbaboplfbrettd7655fr4n2y/node_modules/rc-virtual-list, "^v16.9.0-alpha.0" from node_modules/.pnpm/rc-virtual-list@3.4.13_biqbaboplfbrettd7655fr4n2y/node_modules/rc-virtual-list -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-trigger@5.3.4 -> .\node_modules\.pnpm\rc-trigger@5.3.4_biqbaboplfbrettd7655fr4n2y\node_modules\rc-trigger
+│ │ ├─┬ rc-align@4.0.15 -> .\node_modules\.pnpm\rc-align@4.0.15_biqbaboplfbrettd7655fr4n2y\node_modules\rc-align
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-motion@2.6.3 -> .\node_modules\.pnpm\rc-motion@2.6.3_biqbaboplfbrettd7655fr4n2y\node_modules\rc-motion
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-upload@4.3.4 -> .\node_modules\.pnpm\rc-upload@4.3.4_biqbaboplfbrettd7655fr4n2y\node_modules\rc-upload
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-upload@4.3.4_biqbaboplfbrettd7655fr4n2y/node_modules/rc-upload -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 invalid: "^16.0.0" from node_modules/.pnpm/rc-upload@4.3.4_biqbaboplfbrettd7655fr4n2y/node_modules/rc-upload -> .\node_modules\.pnpm\react@18.2.0\node_modules\react     
+│ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ rc-virtual-list@3.4.13 invalid: "^1.1.0" from node_modules/.pnpm/rc-tree-select@5.7.0_biqbaboplfbrettd7655fr4n2y/node_modules/rc-tree-select -> .\node_modules\.pnpm\rc-virtual-list@3.4.13_biqbaboplfbrettd7655fr4n2y\node_modules\rc-virtual-list
+│ │ ├─┬ rc-resize-observer@1.3.1 -> .\node_modules\.pnpm\rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y\node_modules\rc-resize-observer
+│ │ │ └── react@18.2.0 deduped invalid: "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer, "^16.0.0" from node_modules/.pnpm/rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y/node_modules/rc-resize-observer -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ rc-util@5.29.2 -> .\node_modules\.pnpm\rc-util@5.29.2_biqbaboplfbrettd7655fr4n2y\node_modules\rc-util
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ ├─┬ react-dom@18.2.0 invalid: "^v16.9.0-alpha.0" from node_modules/.pnpm/rc-virtual-list@3.4.13_biqbaboplfbrettd7655fr4n2y/node_modules/rc-virtual-list, "^v16.9.0-alpha.0" from node_modules/.pnpm/rc-virtual-list@3.4.13_biqbaboplfbrettd7655fr4n2y/node_modules/rc-virtual-list, "^v16.9.0-alpha.0" from node_modules/.pnpm/rc-virtual-list@3.4.13_biqbaboplfbrettd7655fr4n2y/node_modules/rc-virtual-list -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ │ └── react@18.2.0 invalid: "^v16.9.0-alpha.0" from node_modules/.pnpm/rc-virtual-list@3.4.13_biqbaboplfbrettd7655fr4n2y/node_modules/rc-virtual-list, "^v16.9.0-alpha.0" from node_modules/.pnpm/rc-virtual-list@3.4.13_biqbaboplfbrettd7655fr4n2y/node_modules/rc-virtual-list, "^v16.9.0-alpha.0" from node_modules/.pnpm/rc-virtual-list@3.4.13_biqbaboplfbrettd7655fr4n2y/node_modules/rc-virtual-list -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+├─┬ next-graphql@2.3.5 -> .\node_modules\.pnpm\next-graphql@2.3.5_encoding@0.1.13\node_modules\next-graphql
+│ └─┬ @graphql-yoga/node@0.0.1-canary-b431ad4.0 -> .\node_modules\.pnpm\@graphql-yoga+node@0.0.1-canary-b431ad4.0_w5omgjj2xsvaezygc2wkyphvh4\node_modules\@graphql-yoga\node
+│   └─┬ light-my-request@4.12.0 -> .\node_modules\.pnpm\light-my-request@4.12.0\node_modules\light-my-request
+│     └─┬ ajv@8.12.0 -> .\node_modules\.pnpm\ajv@8.12.0\node_modules\ajv
+│       └─┬ fast-deep-equal@3.1.3 -> .\node_modules\.pnpm\fast-deep-equal@3.1.3\node_modules\fast-deep-equal
+│         └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^16.2.0" from node_modules/.pnpm/rc-util@4.21.1/node_modules/rc-util, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "16.x" from node_modules/.pnpm/dom-align@1.12.4/node_modules/dom-align, "^16.12.0" from 
+node_modules/.pnpm/istanbul-reports@3.1.5/node_modules/istanbul-reports, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+├─┬ next@13.2.4 invalid: "latest" from the root project, "^12.1.0" from node_modules/.pnpm/next-graphql@2.3.5_encoding@0.1.13/node_modules/next-graphql -> .\node_modules\.pnpm\next@13.2.4_biqbaboplfbrettd7655fr4n2y\node_modules\next
+│ ├─┬ ajv@6.12.6 invalid: "8.11.0" from node_modules/.pnpm/next@13.2.4_biqbaboplfbrettd7655fr4n2y/node_modules/next, "8.11.0" from node_modules/.pnpm/next@13.2.4_biqbaboplfbrettd7655fr4n2y/node_modules/next -> .\node_modules\.pnpm\ajv@6.12.6\node_modules\ajv
+│ │ └─┬ fast-deep-equal@3.1.3 -> .\node_modules\.pnpm\fast-deep-equal@3.1.3\node_modules\fast-deep-equal
+│ │   └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal, "^16.2.0" from node_modules/.pnpm/rc-util@4.21.1/node_modules/rc-util, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal -> .\node_modules\.pnpm\react@18.2.0\node_modules\react  
+│ ├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ │ └── react@18.2.0 deduped -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ ├── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+│ └─┬ styled-jsx@5.1.1 -> .\node_modules\.pnpm\styled-jsx@5.1.1_react@18.2.0\node_modules\styled-jsx
+│   └── react@18.2.0 invalid: "17.0.1" from node_modules/.pnpm/styled-jsx@5.1.1_react@18.2.0/node_modules/styled-jsx -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+├─┬ prisma@4.11.0 -> .\node_modules\.pnpm\prisma@4.11.0\node_modules\prisma
+│ └─┬ fast-deep-equal@3.1.3 -> .\node_modules\.pnpm\fast-deep-equal@3.1.3\node_modules\fast-deep-equal
+│   └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx, "^16.7.0" from node_modules/.pnpm/hoist-non-react-statics@3.3.2/node_modules/hoist-non-react-statics, "^15.7.0" from node_modules/.pnpm/prop-types@15.8.1/node_modules/prop-types, "^16.12.0" from node_modules/.pnpm/fast-deep-equal@3.1.3/node_modules/fast-deep-equal -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+├─┬ react-dom@18.2.0 -> .\node_modules\.pnpm\react-dom@18.2.0_react@18.2.0\node_modules\react-dom
+│ └── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+├── react@18.2.0 -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+└─┬ tsdx@0.14.1 -> .\node_modules\.pnpm\tsdx@0.14.1_@types+node@18.15.10\node_modules\tsdx
+  └── react@18.2.0 deduped invalid: "^16.8.6" from node_modules/.pnpm/tsdx@0.14.1_@types+node@18.15.10/node_modules/tsdx -> .\node_modules\.pnpm\react@18.2.0\node_modules\react
+
+npm ERR! code ELSPROBLEMS
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\@ant-design+icons@5.0.1_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\@ant-design+react-slick@1.0.0_react@18.2.0\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\rc-cascader@3.9.1_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\rc-checkbox@2.3.2_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\rc-dialog@9.0.2_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\rc-dropdown@4.0.1_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\rc-field-form@1.28.0_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\rc-pagination@3.3.1_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\rc-picker@3.3.4_mlnkrlbros4rghcauwy625gk7y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\rc-progress@3.4.1_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\rc-rate@2.10.0_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\rc-resize-observer@1.3.1_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\rc-slider@10.1.1_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\rc-steps@6.0.0_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\rc-switch@4.0.0_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\rc-table@7.31.1_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\rc-tree-select@5.7.0_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\rc-upload@4.3.4_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\rc-virtual-list@3.4.13_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\styled-jsx@5.1.1_react@18.2.0\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\react-sortable-hoc@2.0.0_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\@ant-design+icons@4.8.0_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\rc-overflow@1.3.0_biqbaboplfbrettd7655fr4n2y\node_modules\react
+npm ERR! invalid: react@18.2.0 D:\code\opensource\micro-app\node_modules\.pnpm\reactcss@1.2.3_react@18.2.0\node_modules\react
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     D:\cache\node_cache\cache\_logs\2023-03-29T18_29_31_627Z-debug-0.log
+Waiting for the debugger to disconnect...
+PS D:\code\opensource\micro-app>
+
+
+
