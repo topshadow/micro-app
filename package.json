@@ -1,5 +1,6 @@
 {
     "name": "micro-app",
+    "version": "1.0.0",
     "private": true,
     "dependencies": {
         "@ant-design/icons": "^5.0.1",
@@ -36,10 +37,12 @@
         "webcrypto-jwt": "^0.2.2"
     },
     "devDependencies": {
+        "@rushstack/heft": "^0.50.0",
         "@types/node": "18.15.10",
         "@types/react": "18.0.29",
         "prisma": "^4.8.1",
         "tsdx": "^0.14.1",
+        "tslib": "^2.5.0",
         "typegraphql-prisma": "0.23.2",
         "typescript": "5.0.2"
     }

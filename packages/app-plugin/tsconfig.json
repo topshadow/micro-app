@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "outDir": "./dist",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": false,
+        // "forceConsistentCasingInFileNames": true,
+        "incremental": true,
+        "esModuleInterop": true,
+        "module": "ES2022",
+        "moduleResolution": "node",
+        // "resolveJsonModule": true,
+        // "isolatedModules": true,
+        // "experimentalDecorators": true,
+        // "emitDecoratorMetadata": true, 
+        // "jsx": "preserve",
+        "sourceMap": true
+    },
+    "include": [
+        "next-env.d.ts",
+        "test/parent.ts",
+        "test/child.ts",
+        "src/*/*.ts",
+        "next.config.js"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "files": [
+        "./test/parent.ts",
+        "./test/child.ts"
+    ]
+}

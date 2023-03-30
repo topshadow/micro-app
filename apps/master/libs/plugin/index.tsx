@@ -15,6 +15,7 @@ export abstract class EventListener {
 
 }
 
+
 export let eventBus = new class EventBus {
     started: boolean = false;
     callbacks: Map<string, EventListener[]> = new Map<string, EventListener[]>();
@@ -45,6 +46,7 @@ export let eventBus = new class EventBus {
     }
 
 }
+
 
 export class CalendarEvent extends EventListener {
     listenerId: string = 'calendar' + Date.now();
