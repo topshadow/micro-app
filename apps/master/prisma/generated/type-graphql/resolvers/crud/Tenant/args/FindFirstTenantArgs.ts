@@ -35,5 +35,5 @@ export class FindFirstTenantArgs {
   @TypeGraphQL.Field(_type => [TenantScalarFieldEnum], {
     nullable: true
   })
-  distinct?: Array<"id" | "name" | "createAt" | "updateAt" | "enable"> | undefined;
+  distinct?: Array<"id" | "name" | "createAt" | "updateAt" | "enable" | "appSettings"> | undefined;
 }

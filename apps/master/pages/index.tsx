@@ -1,16 +1,15 @@
 import Head from 'next/head';
-import { useEffect, useRef, useState } from 'react';
+import { createContext, useEffect, useRef, useState } from 'react';
 import React from 'react';
 import styles from '../styles/Home.module.css';
 import { Breadcrumb, Calendar, Layout, Menu, MenuProps, theme } from 'antd';
-import { LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons';
+import { AliwangwangOutlined, LaptopOutlined, MergeCellsOutlined, CheckOutlined, NotificationOutlined, SplitCellsOutlined, UserOutlined, WindowsOutlined } from '@ant-design/icons';
 import { gql, useQuery } from "@apollo/client";
 
 import { Button, Space, Modal } from 'antd';
 import type { Dayjs } from 'dayjs';
 // import type { CalendarMode } from 'antd/es/calendar/generateCalendar';
 import { eventBus, CalendarEvent } from '../libs/plugin';
-import MenuItem from 'antd/es/menu/MenuItem';
 import {
   AppstoreOutlined,
   ContainerOutlined,
@@ -23,122 +22,23 @@ import {
 const { Header, Content, Sider } = Layout;
 import './index.module.css'
 import { LoginResult } from '../libs/auth/auth';
-let pluginLayoutCss = `width: 100%;
-min-height: 200px;
-/* padding: 12px; */
-position: fixed;
-right: 20px;
-bottom: 57px;
-width: 400px;
-height: 300px;
-border: none;`;
-
-interface CommandData {
-  taskId?: number;
-  type: 'invoke' | 'get';
-  command: 'calender' | 'change-layout';
-  data?: { layout: SubAppLayout }
-}
-enum SubAppLayout {
-  fullscreen = 'fullscreen',
-  embed = 'embed'
-}
-interface SubApp {
-  url: string;
-  layout: SubAppLayout
-  onLayoutChange?: (layout) => void
-}
+import { useDebug } from '../libs/dev/debug';
+import { ProSkeleton } from '@ant-design/pro-components';
+import { Frame, SubApp, SubAppLayout } from '../libs/components/frame';
+import { Panel, PanelGroup } from 'react-resizable-panels';
+import ResizeHandle from './app-manage/ResizeHandle';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
-function MainLayout(opt: { children: any }) {
 
-  return <div>
-    <main>
-      {opt.children}
-    </main>
-
-    <footer>
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by{' '}
-        <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-      </a>
-    </footer>
-
-
-    <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-  </div>
-
+function logout() {
+  document.cookie = 'path=/';
+  location.href = '/auth/login'
 }
-
-function SubAppCom(subApp: SubApp) {
-  const iframeEl = useRef<HTMLIFrameElement>(null);
-
-  useEffect(() => {
-    if (typeof window != 'undefined') {
-      window.addEventListener('message', (msg: { data: CommandData }) => {
-        if (msg.data.command == 'change-layout') {
-          debugger;
-          if (subApp.layout == SubAppLayout.embed) {
-            debugger;
-            // subApp.layout = SubAppLayout.fullscreen;
-            subApp.onLayoutChange(SubAppLayout.fullscreen)
-
-          } else {
-            subApp.onLayoutChange(SubAppLayout.embed)
-          }
-        }
-      });
-    }
-  });
-
-  return <iframe ref={iframeEl} src={subApp.url} allowFullScreen={true} style={{ width: '100%', minHeight: '700px', padding: '12px' }} ></iframe>
-
-}
-
-// const items1: MenuProps['items'] = ['1', '2', '3'].map((key) => ({
-//   key,
-//   label: `nav ${key}`,
-// }));
-
-// const items2: MenuProps['items'] = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
-//   (icon, index) => {
-//     const key = String(index + 1);
-
-//     return {
-//       key: `sub${key}`,
-//       icon: React.createElement(icon),
-//       label: `subnav ${key}`,
-
-//       children: new Array(4).fill(null).map((_, j) => {
-//         const subKey = index * 4 + j + 1;
-//         return {
-//           key: subKey,
-//           label: `option${subKey}`,
-//         };
-//       }),
-//     };
-//   },
-// );
 function getItem(
   label: React.ReactNode,
   key: React.Key,
+  onClick: any,
   icon?: React.ReactNode,
   children?: MenuItem[],
   type?: 'group',
@@ -148,49 +48,59 @@ function getItem(
     icon,
     children,
     label,
-    type,
+    type, onClick,
+    display: true
+
   } as MenuItem;
 }
-const items: MenuItem[] = [
-  getItem('Option 1', '1', <PieChartOutlined size={8} style={{ fontSize: '12px' }} />),
-  getItem('Option 2', '2', <DesktopOutlined size={8} style={{ fontSize: '12px' }} />),
-  getItem('Option 3', '3', <ContainerOutlined size={8} style={{ fontSize: '12px' }} />),
-
-  getItem('Navigation One', 'sub1', <MailOutlined />, [
-    getItem('Option 5', '5'),
-    getItem('Option 6', '6'),
-    getItem('Option 7', '7'),
-    getItem('Option 8', '8'),
-  ]),
-
-  getItem('Navigation Two', 'sub2', <AppstoreOutlined />, [
-    getItem('Option 9', '9'),
-    getItem('Option 10', '10'),
-
-    getItem('Submenu', 'sub3', null, [getItem('Option 11', '11'), getItem('Option 12', '12')]),
-  ]),
-];
-function logout() {
-  document.cookie = 'path=/';
-  location.href = '/auth/login'
+enum ViewMode {
+  Single = 'single',
+  Multi = 'multi',
 }
-export default function Home() {
-  const [collopse, setCollpse] = useState(true);
-  const apps: SubApp[] = [{
-    url: 'http://192.168.10.101:3001/Samples/TypeScript/Demo/index.html',
-    layout: SubAppLayout.embed
-  },
-  {
-    url: 'http://localhost:3001',
-    layout: SubAppLayout.fullscreen
+function getViewMode() {
+  if (typeof window != 'undefined') {
+    return localStorage.getItem('viewMode') || ViewMode.Single as ViewMode
+
+  } else {
+    return ViewMode.Single;
   }
-  ];
-  const [appUrl, setAppUrl] = useState<SubApp>(apps[0]);
+}
+function setViewMode(mode: ViewMode) {
+  localStorage.setItem('viewMode', mode)
+}
+
+export const ViewModeContext = createContext({ mode: ViewMode.Single });
+
+export default function Home() {
+
+  const [count, setCount] = useState(0);
+
+
+
+  const [collopse, setCollpse] = useState(true);
+  const [isModalOpen, setModelOpen] = useState(true);
   const [calendarEvent, setCalendarEvent] = useState<CalendarEvent | null>();
-  const [isModalOpen, setModelOpen] = useState(false);
   const [taskId, setTaskId] = useState<string>();
-  let currentDiv = null;
-  let task = {} as any;
+  const [currentApp, setCurrentApp] = useState<SubApp | null>(null);
+  const [sidebar,setSidebar] = useState(false);
+  let debug = useDebug();
+  const [apps, setApps] = useState<SubApp[]>([
+    { title: '助手', url: 'http://192.168.10.101:3001/Samples/TypeScript/Demo/index.html', layout: SubAppLayout.embed, icon: <AliwangwangOutlined />, display: true, active: true },
+    { title: '应用管理', url: '/app-manage', layout: SubAppLayout.embed, icon: <WindowsOutlined />, display: true },
+    { title: '应用管理2', url: '/app-manage2', layout: SubAppLayout.embed, icon: <WindowsOutlined />, display: true },
+    { title: '应用管理3', url: '/app-manage3', layout: SubAppLayout.embed, icon: <WindowsOutlined />, display: true },
+  ]);
+  const [hideAppUrls, setHideAppUrls] = useState([]);
+  // @ts-ignore
+  const [items, setItems] = useState<(MenuItem & { display: boolean })[]>(apps.map(app => getItem(app.title, app.url, () => activeApp(app), app.icon)).concat(getItem('排班', '排班', null, <MailOutlined></MailOutlined>, apps.map(app => getItem(app.title, 'toggle-' + app.title, (item) => { hideAppUrls.indexOf(app.url) < 0 ? setHideAppUrls(hideAppUrls.concat(app.url)) : setHideAppUrls(hideAppUrls.splice(hideAppUrls.indexOf(app.url), 1)) }, (<div>{hideAppUrls.indexOf(app.url) <= -1 ? <CheckOutlined /> : null}</div>))))));
+  let menuItems = items.filter(item => {
+    let app = hideAppUrls.find(url => url == item.key);
+    if (app) {
+      return app.display
+    } else {
+      return true;
+    }
+  })
 
   useEffect(() => {
 
@@ -202,113 +112,139 @@ export default function Home() {
 
   }, []);
 
-
   let datePicker = <Modal title="Basic Modal" open={isModalOpen} width={'900px'} onCancel={() => setModelOpen(false)}>
     <Calendar onPanelChange={(v) => calendarEvent.emit(v.toDate())} />;
 
   </Modal>;
+  let toggleMode = () => {
+
+    if (getViewMode() == ViewMode.Single) {
+
+      setViewMode(ViewMode.Multi);
+      apps.forEach(app => app.active = false);
+      if (currentApp) {
+        currentApp.active = true;
+      }
+
+    } else {
+      setViewMode(ViewMode.Single);
+    }
+  }
+  let activeApp = (app: SubApp) => {
+    if (getViewMode() == ViewMode.Single) {
+      apps.forEach(app => app.active = false);
+    }
+    app.active = true;
+
+    setCurrentApp(app);
+    setApps(apps)
+  }
 
 
-  return (
-    <div >
+  return <div>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="./favicon.ico" />
+        <link rel='stylesheet' href={'/css'} />
       </Head>
-      <Layout >
-        <Header style={{
-          backgroundColor: "#fff", padding: 0, height: '45px',
-          display: 'flex'
+      <ViewModeContext.Provider value={{ mode: ViewMode.Single }}>
+        <Layout >
+          <Header style={{
+            backgroundColor: "#fff", padding: 0, height: '45px',
+            display: 'flex'
 
-        }}>
-          <div style={{
+          }}>
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: '100%',
+              width: '60px',
+              cursor: 'pointer',
+              flexShrink: 0
+            }} onClick={() => setCollpse(!collopse)}><MenuUnfoldOutlined /></div>
+
+            <div className="logo" />
+            <div style={{ width: '100%', alignItems: 'center', display: 'flex' }}>
+              <div style={{ width: '100%' }}>菜单
+                {debug ? <Button>调试</Button> : ''}
+              </div>
+              <div style={{ width: '160px', display: 'flex', alignItems: 'center', justifyContent: 'end' }}>
+                <>
+                <Button onClick={()=>setSidebar(!sidebar)}>侧边栏</Button>
+                  {getViewMode()}
+                  {getViewMode() == ViewMode.Single ? <SplitCellsOutlined title='多面板' style={{ cursor: 'pointer', marginRight: '30px' }} onClick={() => toggleMode()} /> : <MergeCellsOutlined title='单面板' style={{ cursor: 'pointer', marginRight: '30px' }} onClick={() => toggleMode()} />}
+                  <Button type='link' color={'primary'} onClick={() => logout()} >注销</Button>
+
+                </>
+
+              </div>
+            </div>
+            <Menu theme={"light"} onClick={() => alert`1`} mode="horizontal" defaultSelectedKeys={['2']} />
+          </Header>
+          <Layout>
+            <Sider collapsedWidth={'60'} collapsed={collopse} style={{ width: 'auto', borderRight: '1px solid #e2e2e2', boxShadow: '2px 2px 2px 2px #e2e2e2' }}>
+              <Menu
+                defaultSelectedKeys={['1']}
+                defaultOpenKeys={['sub1']}
+                mode="vertical"
+                theme="light"
+                inlineCollapsed={true}
+                items={menuItems}
+
+
+                style={{ height: 'calc(100vh - 70px)', }}
+              />
+            </Sider>
+            <div style={{ width: '100%' ,    height: 'calc(100vh - 100px)'}} >
+              <PanelGroup autoSaveId="example" direction="horizontal">
+
+                <>
+
+                  {apps.map(app => (<>
+                    <Panel className={styles.Panel} defaultSize={20} order={1} style={{ display: app.active ? 'block' : 'none' }}>
+                      <Frame appUrl={app} layoutStyle={{ display: app.active ? 'block' : 'none',height: 'calc(100vh - 100px)' }} onClose={() => { app.active = false; setApps(apps); setCount(count + 1) }} ></Frame>
+
+                    </Panel>
+                    {app.active && apps.filter(app => app.active)[apps.filter(app => app.active).length - 1] != app ? <ResizeHandle /> : null}
+
+
+                  </>))}
+                </>
+                {sidebar?(<>
+                <ResizeHandle />
+                <Panel className={styles.Panel} defaultSize={20} order={1} >
+                  辅助面板
+                </Panel>
+                </>
+                ):false}
+                
+              </PanelGroup>
+              
+            </div>
+          </Layout>
+          <Layout style={{
+            position: 'fixed',
+            bottom: '0',
+            left: '0',
+            width: '100%',
+            height: '25px',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center',
-            height: '100%',
-            width: '60px',
-            cursor: 'pointer',
-            flexShrink: 0
-          }} onClick={() => setCollpse(!collopse)}><MenuUnfoldOutlined /></div>
-
-          <div className="logo" />
-          <div style={{ width: '100%', alignItems: 'center', display: 'flex' }}>
-            <div style={{ width: '100%' }}>菜单</div>
-            <div style={{ width: '60px' }}>
-              <Button type='link' color={'primary'} onClick={() => logout()} >注销</Button>
+            justifyContent: 'flex-start',
+            padding: '0px 5px',
+            background: 'rgb(112,82,151)', color: '#fff'
+          }} >
+            <div style={{ width: 'calc(100vw - 10px)', padding: "5px" }} >
+              <span style={{ width: '250px', display: 'inline-block' }}>应用:{apps.filter(app => app.active).length}/{apps.length} </span>
+              <span style={{ width: '250px', display: 'inline-block' }}>
+                工具条
+              </span>
             </div>
-          </div>
-          <Menu theme={"light"} onClick={() => alert`1`} mode="horizontal" defaultSelectedKeys={['2']} />
-        </Header>
-        <Layout>
-          <Sider collapsedWidth={'60'} collapsed={collopse} style={{ width: 'auto', borderRight: '1px solid #e2e2e2', boxShadow: '2px 2px 2px 2px #e2e2e2' }}>
-            <Menu
-              defaultSelectedKeys={['1']}
-              defaultOpenKeys={['sub1']}
-              mode="vertical"
-              theme="light"
-              inlineCollapsed={true}
-              items={items}
-
-              style={{ height: 'calc(100vh - 70px)', }}
-            />
-          </Sider>
-          <Layout style={{ padding: '0 24px 24px' }}>
-            {/* <Breadcrumb style={{ margin: '16px 0' }}>
-              <Breadcrumb.Item>Home</Breadcrumb.Item>
-              <Breadcrumb.Item>List</Breadcrumb.Item>
-              <Breadcrumb.Item>App</Breadcrumb.Item>
-            </Breadcrumb> */}
-            <Content
-              style={{
-                padding: 24,
-                margin: 0,
-                minHeight: 280,
-              }}
-            >
-              <SubAppCom url={appUrl.url} layout={appUrl.layout} onLayoutChange={(layout) => { appUrl.layout = layout; }}></SubAppCom>
-
-            </Content>
           </Layout>
         </Layout>
-        <Layout style={{
-          position: 'fixed',
-          bottom: '0',
-          left: '0',
-          width: '100%',
-          height: '25px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'flex-start',
-          padding: '0px 5px',
-          background: 'rgb(112,82,151)', color: '#fff'
-        }} >
-          <div style={{ width: '100vw', padding: "5px" }} >
-            <span style={{ width: '250px', display: 'inline-block' }}>应用数量</span>
-            <span style={{ width: '250px', display: 'inline-block' }}>
-              工具条
-
-            </span>
-          </div>
-
-        </Layout>
-      </Layout>
+      </ViewModeContext.Provider>
       {datePicker}
-
-      {/* {appUrl.layout == SubAppLayout.embed ? <MainLayout>   <div style={{ display: 'flex' }}>
-        <div style={{ width: '200px', padding: '12px' }}>
-          <Button>按钮</Button>
-          <div>应用列表</div>
-          <div style={{ padding: '12px' }} onClick={() => { setAppUrl(apps[0]) }}>应用1</div>
-          <div style={{ padding: '12px' }} onClick={() => { setAppUrl(apps[1]) }}>应用2</div>
-
-        </div>
-        <SubAppCom url={appUrl.url} layout={appUrl.layout} onLayoutChange={(layout) => { appUrl.layout = layout; }}></SubAppCom>
-
-      </div></MainLayout> : <SubAppCom url={appUrl.url} layout={appUrl.layout} onLayoutChange={(layout) => { appUrl.layout = layout }}></SubAppCom>}
- */}
-
-
-    </div >
-  )
+    </div>;
+  
 }

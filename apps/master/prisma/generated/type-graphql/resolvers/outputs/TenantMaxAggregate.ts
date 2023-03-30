@@ -31,4 +31,9 @@ export class TenantMaxAggregate {
     nullable: true
   })
   enable!: boolean | null;
+
+  @TypeGraphQL.Field(_type => String, {
+    nullable: true
+  })
+  appSettings!: string | null;
 }

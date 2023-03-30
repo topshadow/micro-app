@@ -2,7 +2,6 @@ import * as TypeGraphQL from "type-graphql";
 import * as GraphQLScalars from "graphql-scalars";
 import { Prisma } from "@prisma/client";
 import { DecimalJSScalar } from "../../scalars";
-import { TenantCreateNestedManyWithoutAppsInput } from "../inputs/TenantCreateNestedManyWithoutAppsInput";
 import { UserCreateNestedManyWithoutAppsInput } from "../inputs/UserCreateNestedManyWithoutAppsInput";
 
 @TypeGraphQL.InputType("AppCreateInput", {
@@ -43,11 +42,6 @@ export class AppCreateInput {
     nullable: false
   })
   readmeUrl!: string;
-
-  @TypeGraphQL.Field(_type => TenantCreateNestedManyWithoutAppsInput, {
-    nullable: true
-  })
-  tenants?: TenantCreateNestedManyWithoutAppsInput | undefined;
 
   @TypeGraphQL.Field(_type => UserCreateNestedManyWithoutAppsInput, {
     nullable: true

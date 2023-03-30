@@ -2,7 +2,6 @@ import * as TypeGraphQL from "type-graphql";
 import * as GraphQLScalars from "graphql-scalars";
 import { Prisma } from "@prisma/client";
 import { DecimalJSScalar } from "../scalars";
-import { Tenant } from "../models/Tenant";
 import { User } from "../models/User";
 import { AppCount } from "../resolvers/outputs/AppCount";
 
@@ -44,8 +43,6 @@ export class App {
     nullable: false
   })
   readmeUrl!: string;
-
-  tenants?: Tenant[];
 
   users?: User[];
 

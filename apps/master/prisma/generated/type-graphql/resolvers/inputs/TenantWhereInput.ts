@@ -2,10 +2,10 @@ import * as TypeGraphQL from "type-graphql";
 import * as GraphQLScalars from "graphql-scalars";
 import { Prisma } from "@prisma/client";
 import { DecimalJSScalar } from "../../scalars";
-import { AppListRelationFilter } from "../inputs/AppListRelationFilter";
 import { BoolFilter } from "../inputs/BoolFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { StringFilter } from "../inputs/StringFilter";
+import { StringNullableFilter } from "../inputs/StringNullableFilter";
 import { UserListRelationFilter } from "../inputs/UserListRelationFilter";
 
 @TypeGraphQL.InputType("TenantWhereInput", {
@@ -57,8 +57,8 @@ export class TenantWhereInput {
   })
   users?: UserListRelationFilter | undefined;
 
-  @TypeGraphQL.Field(_type => AppListRelationFilter, {
+  @TypeGraphQL.Field(_type => StringNullableFilter, {
     nullable: true
   })
-  apps?: AppListRelationFilter | undefined;
+  appSettings?: StringNullableFilter | undefined;
 }

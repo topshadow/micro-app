@@ -35,6 +35,11 @@ export class TenantGroupBy {
   })
   enable!: boolean;
 
+  @TypeGraphQL.Field(_type => String, {
+    nullable: true
+  })
+  appSettings!: string | null;
+
   @TypeGraphQL.Field(_type => TenantCountAggregate, {
     nullable: true
   })

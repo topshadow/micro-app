@@ -5,7 +5,8 @@ export enum TenantScalarFieldEnum {
   name = "name",
   createAt = "createAt",
   updateAt = "updateAt",
-  enable = "enable"
+  enable = "enable",
+  appSettings = "appSettings"
 }
 TypeGraphQL.registerEnumType(TenantScalarFieldEnum, {
   name: "TenantScalarFieldEnum",

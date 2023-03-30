@@ -1,12 +1,14 @@
 
 export let a = { hello: () => alert('hello') }
 
+import * as si from './service-invoke/index';
 
-namespace Plugin {
+export namespace Plugin {
 
     export function useCalender() {
 
     }
+    export let serviceInvoke = si;
 
 }
 

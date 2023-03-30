@@ -4,7 +4,6 @@ import { Prisma } from "@prisma/client";
 import { DecimalJSScalar } from "../../scalars";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { StringFilter } from "../inputs/StringFilter";
-import { TenantListRelationFilter } from "../inputs/TenantListRelationFilter";
 import { UserListRelationFilter } from "../inputs/UserListRelationFilter";
 
 @TypeGraphQL.InputType("AppWhereInput", {
@@ -60,11 +59,6 @@ export class AppWhereInput {
     nullable: true
   })
   readmeUrl?: StringFilter | undefined;
-
-  @TypeGraphQL.Field(_type => TenantListRelationFilter, {
-    nullable: true
-  })
-  tenants?: TenantListRelationFilter | undefined;
 
   @TypeGraphQL.Field(_type => UserListRelationFilter, {
     nullable: true

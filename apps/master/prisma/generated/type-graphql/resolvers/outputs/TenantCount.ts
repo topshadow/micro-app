@@ -11,9 +11,4 @@ export class TenantCount {
     nullable: false
   })
   users!: number;
-
-  @TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-    nullable: false
-  })
-  apps!: number;
 }

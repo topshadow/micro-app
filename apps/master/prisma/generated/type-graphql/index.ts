@@ -1,4 +1,4 @@
-import 'reflect-metadata';
+import 'reflect-metadata'
 import * as crudResolversImport from "./resolvers/crud/resolvers-crud.index";
 import * as relationResolversImport from "./resolvers/relations/resolvers.index";
 import { NonEmptyArray } from "type-graphql";

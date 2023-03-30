@@ -32,4 +32,9 @@ export class TenantCountOrderByAggregateInput {
     nullable: true
   })
   enable?: "asc" | "desc" | undefined;
+
+  @TypeGraphQL.Field(_type => SortOrder, {
+    nullable: true
+  })
+  appSettings?: "asc" | "desc" | undefined;
 }

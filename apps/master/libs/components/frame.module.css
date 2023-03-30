@@ -1,0 +1,7 @@
+.frame .close{
+    display: none;
+}
+
+.frame .close:hover{
+    display: block;
+}

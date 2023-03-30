@@ -6,6 +6,8 @@ specifiers:
   '@apollo/client': ^3.7.10
   '@apollo/server': ^4.3.0
   '@as-integrations/next': ^1.1.0
+  '@dnd-kit/core': ^6.0.8
+  '@dnd-kit/utilities': ^3.2.1
   '@pothos/core': 3.29.0
   '@pothos/plugin-prisma': 3.47.0
   '@prisma/client': ^4.11.0
@@ -29,6 +31,8 @@ specifiers:
   prisma: ^4.8.1
   react: 18.2.0
   react-dom: 18.2.0
+  react-resizable-panels: ^0.0.37
+  react-split-pane: ^0.1.92
   reflect-metadata: ^0.1.13
   tsdx: ^0.14.1
   type-graphql: ^1.1.1
@@ -42,6 +46,8 @@ dependencies:
   '@apollo/client': 3.7.10_wxfjnvblbhu4ianu4f2qg722fu
   '@apollo/server': 4.5.0_qyboaezk4cm6zsf5jfobzggyaa
   '@as-integrations/next': 1.2.0_muqjbpjoiwgmavcrilagq3zl7m
+  '@dnd-kit/core': 6.0.8_biqbaboplfbrettd7655fr4n2y
+  '@dnd-kit/utilities': 3.2.1_react@18.2.0
   '@pothos/core': 3.29.0_graphql@15.8.0
   '@pothos/plugin-prisma': 3.47.0_ftgytp4advrfu5ykbcspbag4oi
   '@prisma/client': 4.11.0_prisma@4.11.0
@@ -62,6 +68,8 @@ dependencies:
   node-fetch: 3.3.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-resizable-panels: 0.0.37_biqbaboplfbrettd7655fr4n2y
+  react-split-pane: 0.1.92_biqbaboplfbrettd7655fr4n2y
   reflect-metadata: 0.1.13
   type-graphql: 1.1.1_yxlhq5elwzdhphazhcbwh6wmlq
   webcrypto-jwt: 0.2.2
@@ -1878,6 +1886,37 @@ packages:
   /@ctrl/tinycolor/3.6.0:
     resolution: {integrity: sha512-/Z3l6pXthq0JvMYdUFyX9j0MaCltlIn6mfh9jLyQwg5aPKxkyNa0PTHtU1AlFXLNk55ZuAeJRcpvq+tmLfKmaQ==}
     engines: {node: '>=10'}
+    dev: false
+
+  /@dnd-kit/accessibility/3.0.1_react@18.2.0:
+    resolution: {integrity: sha512-HXRrwS9YUYQO9lFRc/49uO/VICbM+O+ZRpFDe9Pd1rwVv2PCNkRiTZRdxrDgng/UkvdC3Re9r2vwPpXXrWeFzg==}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      tslib: 2.5.0
+    dev: false
+
+  /@dnd-kit/core/6.0.8_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-lYaoP8yHTQSLlZe6Rr9qogouGUz9oRUj4AHhDQGQzq/hqaJRpFo65X+JKsdHf8oUFBzx5A+SJPUvxAwTF2OabA==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@dnd-kit/accessibility': 3.0.1_react@18.2.0
+      '@dnd-kit/utilities': 3.2.1_react@18.2.0
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      tslib: 2.5.0
+    dev: false
+
+  /@dnd-kit/utilities/3.2.1_react@18.2.0:
+    resolution: {integrity: sha512-OOXqISfvBw/1REtkSK2N3Fi2EQiLMlWUlqnOK/UpOISqBZPWpE6TqL+jcPtMOkE8TqYGiURvRdPSI9hltNUjEA==}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      tslib: 2.5.0
     dev: false
 
   /@emotion/hash/0.8.0:
@@ -9484,6 +9523,16 @@ packages:
     resolution: {integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==}
     dev: false
 
+  /react-resizable-panels/0.0.37_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-8aTW4xyd/TZfsiDi84OUUJvbepjcC46I/RZyveXsauL12IzyygsxhfY60YghKKhmeglQ6OJq41LKIlgMTntZOQ==}
+    peerDependencies:
+      react: ^16.14.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.14.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
   /react-sortable-hoc/2.0.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-JZUw7hBsAHXK7PTyErJyI7SopSBFRcFHDjWW5SWjcugY0i6iH7f+eJkY8cJmGMlZ1C9xz1J3Vjz0plFpavVeRg==}
     peerDependencies:
@@ -9495,6 +9544,25 @@ packages:
       prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /react-split-pane/0.1.92_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-GfXP1xSzLMcLJI5BM36Vh7GgZBpy+U/X0no+VM3fxayv+p1Jly5HpMofZJraeaMl73b3hvlr+N9zJKvLB/uz9w==}
+    peerDependencies:
+      react: ^16.0.0-0
+      react-dom: ^16.0.0-0
+    dependencies:
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      react-lifecycles-compat: 3.0.4
+      react-style-proptype: 3.2.2
+    dev: false
+
+  /react-style-proptype/3.2.2:
+    resolution: {integrity: sha512-ywYLSjNkxKHiZOqNlso9PZByNEY+FTyh3C+7uuziK0xFXu9xzdyfHwg4S9iyiRRoPCR4k2LqaBBsWVmSBwCWYQ==}
+    dependencies:
+      prop-types: 15.8.1
     dev: false
 
   /react/18.2.0:

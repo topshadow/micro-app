@@ -42,7 +42,8 @@ model Tenant {
   updateAt DateTime @updatedAt
   enable   Boolean  @default(true)
   users    User[]
-  apps     App[]
+
+  appSettings String?
 }
 
 model App {
@@ -53,6 +54,5 @@ model App {
   description String
   icon        String
   readmeUrl   String
-  tenants     Tenant[]
   users       User[]
 }

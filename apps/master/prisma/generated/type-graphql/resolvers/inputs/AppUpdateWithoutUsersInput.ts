@@ -4,7 +4,6 @@ import { Prisma } from "@prisma/client";
 import { DecimalJSScalar } from "../../scalars";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
-import { TenantUpdateManyWithoutAppsNestedInput } from "../inputs/TenantUpdateManyWithoutAppsNestedInput";
 
 @TypeGraphQL.InputType("AppUpdateWithoutUsersInput", {
   isAbstract: true
@@ -44,9 +43,4 @@ export class AppUpdateWithoutUsersInput {
     nullable: true
   })
   readmeUrl?: StringFieldUpdateOperationsInput | undefined;
-
-  @TypeGraphQL.Field(_type => TenantUpdateManyWithoutAppsNestedInput, {
-    nullable: true
-  })
-  tenants?: TenantUpdateManyWithoutAppsNestedInput | undefined;
 }

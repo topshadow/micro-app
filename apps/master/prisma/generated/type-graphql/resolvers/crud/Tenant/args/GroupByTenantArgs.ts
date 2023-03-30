@@ -20,7 +20,7 @@ export class GroupByTenantArgs {
   @TypeGraphQL.Field(_type => [TenantScalarFieldEnum], {
     nullable: false
   })
-  by!: Array<"id" | "name" | "createAt" | "updateAt" | "enable">;
+  by!: Array<"id" | "name" | "createAt" | "updateAt" | "enable" | "appSettings">;
 
   @TypeGraphQL.Field(_type => TenantScalarWhereWithAggregatesInput, {
     nullable: true
