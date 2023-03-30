@@ -1,6 +1,0 @@
-items:
-  - name: SharePoint Framework reference
-    href: ~/overview/sharepoint.md
-    items:
-      - name: plugin
-        uid: plugin!
