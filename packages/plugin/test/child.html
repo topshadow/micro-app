@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>child Document</title>
+</head>
+<body>
+    child
+    <button onclick="child.sendMessage()">发送消息</button>
+    <button onclick="child.callTask()">执行任务</button>
+    
+
+    <div>
+<div>
+    队列状态: <div id="status"></div>
+</div>
+        <div>
+           处理中的任务数量 <input id="taskNum">
+
+
+        </div>
+        <div>
+          结果:  <div id="result"></div>
+        </div>
+    </div>
+    
+    <script>
+        window.id='child';
+    </script>
+    <script type="module" src="../dist/plugin.esm.js"></script>
+</body>
+</html>

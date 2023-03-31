@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parent Document</title>
+    <script>
+        window.name="shell-parent"
+    </script>
+    <script src="../../dist/plugin.esm.js" type="module"></script>
+    
+</head>
+<body>
+
+    <div>
+        主应用
+        <div style="display:flex">
+        <div>   主应用加载状态</div> <div id="status"></div>
+        </div>
+        <div style="display:flex">
+            <div style="display:grid;grid-template-columns: 1fr 1fr 1fr 1fr;">
+                <div>已经加载数量</div>
+                <div id="app_finish_num"></div>
+                <div>总应用数量</div>
+                <div id="app_num"></div>
+        
+
+        </div>
+        <button onclick="parent.addChild2()">加载子应用2</button>
+    </div>
+    <div id="child1" style="border:1px solid gray">
+        <div  style="display:flex">
+            <div>
+                child1 状态
+
+            </div>
+            <div id="child1_status">
+                
+            </div>
+        </div>
+        <iframe id="child1" style="border:0" src="./child1.html" onload="parent.onChildLoad('child1')" ></iframe>
+     
+    </div>
+    
+    
+</body>
+</html>

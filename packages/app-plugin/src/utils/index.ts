@@ -2,6 +2,18 @@ export interface Task {
 
 }
 
+
+export abstract class EventListener {
+    listenerId: string;
+    data: any;
+    abstract emit: (data: any) => void
+    abstract handle: Function;
+
+
+}
+
+
+
 enum SubAppLayout {
     fullscreen = 'fullscreen',
     embed = 'embed'
@@ -15,10 +27,49 @@ interface CommandData {
 }
 
 
+export class CalendarEvent extends EventListener {
+    listenerId: string = 'calendar' + Date.now();
+    data: any
+    emit(date: Date) {
+        alert(JSON.stringify(this.data));
+        window.frames[0].postMessage({ date, taskId: this.data.taskId }, '*')
+    }
+    handle: Function;
+    constructor(handle: Function) {
+        super();
+        this.handle = handle;
+        if (!eventBus.started) {
+            eventBus.startEventListener();
+        }
+        eventBus.registerListener('test', this);
+
+    }
+
+    startListen() {
+
+    }
+    removeListener() {
+        let values = eventBus.callbacks
+        for (let key in values) {
+            let callbacks = eventBus.callbacks.get(key);
+            if (callbacks) {
+                let exsitListener = callbacks.find(c => c.listenerId == this.listenerId);
+                if (exsitListener) {
+                    let indexOf = callbacks.indexOf(exsitListener);
+                    if (indexOf > -1) { callbacks.splice(indexOf, 1) };
+                }
+            }
+        }
+
+
+    }
+
+}
 
 
 
 export let eventBus = new class EventBus {
+    started: boolean = false;
     listeners: Map<string, EventListener[]> = new Map<string, EventListener[]>();
     callbacks: Map<string, Function[]> = new Map<string, Function[]>();
     constructor() {

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parent Document</title>
+    <script type="module" src="../dist/plugin.esm.js"></script>
+    
+</head>
+<body>
+    <div>
+        <div style="border:1px solid gray;margin-bottom: 30px;">
+
+        
+        <button onclick="p.displayEventData()">显示当前事件数据</button>
+        <button onclick="p.backData()">返回日期</button>
+        <button onclick="p.removeListener()">移除事件</button>
+    </div>
+    <div style="border:1px solid gray;margin-bottom: 30px;">
+        <h1>应用订阅</h1>
+    </div>
+        
+        <div style="background-color: #e2e2e2;">
+            <div>
+               eventBus状态 <div id="status"></div>
+            </div>
+            <div>
+             日历:   <input id="calender"  type="date">
+            </div>
+        </div>
+        
+    </div>
+    <iframe src="./child.html" width="800px" height="400px"></iframe>
+    <script >window.id='parent'</script>
+    
+</body>
+</html>
