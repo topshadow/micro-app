@@ -1,5 +1,5 @@
 import { Arg, Args, Query, Resolver } from "type-graphql";
-import { Tenant } from "../../prisma/generated/type-graphql/index";
+import { App, Tenant } from "../../prisma/generated/type-graphql/index";
 import { User } from "../../prisma/generated/type-graphql/index";
 import { LoginResult, LoginInput } from "./auth";
 import * as TypeGraphQL from "type-graphql";
@@ -18,7 +18,10 @@ export class AuthResolver {
     @Query(_ => LoginResult)
     public async login(@Args() input: LoginInput, @TypeGraphQL.Ctx() ctx: any,): Promise<LoginResult> {
         let client = (getPrismaFromContext(ctx) as PrismaClient)
-        let user = await client.user.findFirst({ where: { username: { equals: input.username } } });
+
+
+        let user = await client.user.findFirst({ where: { username: { equals: input.username } }, include: { tenant: true } });
+        debugger;
         let token = await signUser(user);
 
         if (user) {
@@ -33,18 +36,39 @@ export class AuthResolver {
 
 
     @Query(_ => User)
-    public async currentUser(@TypeGraphQL.Ctx() ctx: { req: any }) {
+    public async currentUser(@TypeGraphQL.Ctx() ctx: { req: any }): Promise<User> {
         // debugger;
         let token = ctx.req.cookies['token'] ? ctx.req.cookies['token'] : null;
         let { payload } = await decodeUser(token);
+
         debugger;
-        return payload;
+
+        return payload as any;
+
     }
 
     @Query(_ => User)
     public async checkToken(@Arg('token') token: string) {
         let { payload } = await decodeUser(token);
+
         return payload;
     }
 
+    @Query(_ => LoginResult)
+    public async refreshToken(@TypeGraphQL.Ctx() ctx: { req: any }): Promise<LoginResult> {
+        let user = await this.currentUser(ctx);
+        let client = (getPrismaFromContext(ctx) as PrismaClient);
+        let userDb = await client.user.findFirst({ where: { id: { equals: user.id } }, include: { tenant: true } });
+        let token = await signUser(userDb);
+        return { token, success: true, message: '' }
+
+    }
+
+
+
+    private async getCurrentUser(ctx: any): Promise<User> {
+        let token = ctx.req.cookies['token'] ? ctx.req.cookies['token'] : null;
+        let { payload } = await decodeUser(token);
+        return payload as any;
+    }
 }

@@ -1,5 +1,5 @@
 import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
-import { login } from './auth';
+import { useLogin } from './auth';
 export const client = new ApolloClient({
     uri: 'http://localhost:3000/api/graphql',
     cache: new InMemoryCache(),
@@ -8,6 +8,6 @@ export const client = new ApolloClient({
 
 export let api = {
     auth: {
-        login
+        useLogin
     }
 }
