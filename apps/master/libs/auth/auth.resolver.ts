@@ -41,8 +41,6 @@ export class AuthResolver {
         let token = ctx.req.cookies['token'] ? ctx.req.cookies['token'] : null;
         let { payload } = await decodeUser(token);
 
-        debugger;
-
         return payload as any;
 
     }

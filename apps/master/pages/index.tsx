@@ -75,7 +75,7 @@ export const ViewModeContext = createContext({ mode: ViewMode.Single });
 
 export default function Home() {
   const [apps, setApps] = useState<SubApp[]>([
-    { title: '助手', url: 'http://192.168.10.101:3001/Samples/TypeScript/Demo/index.html', layout: SubAppLayout.embed, icon: <AliwangwangOutlined />, display: true, active: true },
+    { title: '助手', url: 'http://localhost:3001/Samples/TypeScript/Demo/index.html', layout: SubAppLayout.embed, icon: <AliwangwangOutlined />, display: true, active: true },
     { title: '应用管理', url: '/app-manage', layout: SubAppLayout.embed, icon: <WindowsOutlined />, display: true },
     // { title: '应用管理2', url: '/app-manage2', layout: SubAppLayout.embed, icon: <WindowsOutlined />, display: true },
     // { title: '应用管理3', url: '/app-manage3', layout: SubAppLayout.embed, icon: <WindowsOutlined />, display: true },
