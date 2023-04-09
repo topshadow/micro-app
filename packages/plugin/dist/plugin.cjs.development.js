@@ -9,8 +9,8 @@ function hello() {}
 /**
  * 主服务
  */
-var master = {
-  hello: hello
+let master = {
+  hello
 };
 
 
@@ -20,31 +20,12 @@ var index = {
     master: master
 };
 
-function _inheritsLoose(subClass, superClass) {
-  subClass.prototype = Object.create(superClass.prototype);
-  subClass.prototype.constructor = subClass;
-  _setPrototypeOf(subClass, superClass);
-}
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-  return _setPrototypeOf(o, p);
-}
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-  return self;
-}
-
 var SubAppLayout;
 (function (SubAppLayout) {
   SubAppLayout["fullscreen"] = "fullscreen";
   SubAppLayout["embed"] = "embed";
 })(SubAppLayout || (SubAppLayout = {}));
-var EventListener = function EventListener() {};
+class EventListener {}
 /**消息中心状态 */
 var EventBusStatus;
 (function (EventBusStatus) {
@@ -53,18 +34,17 @@ var EventBusStatus;
   /** 处理中 */
   EventBusStatus["process"] = "process";
 })(EventBusStatus || (EventBusStatus = {}));
-var eventBus = /*#__PURE__*/new ( /*#__PURE__*/function () {
-  function EventBus() {
+let eventBus = /*#__PURE__*/new class EventBus {
+  constructor() {
     this.status = EventBusStatus.free;
     this.processTasks = [];
     this.listeners = new Map();
     this.callbacks = new Map();
   }
-  var _proto = EventBus.prototype;
-  _proto.callTask = function callTask(event, callback) {
+  callTask(event, callback) {
     this.startTask(event);
     event.taskId = event.type + Date.now();
-    var callbacks = this.callbacks.get(event.taskId);
+    let callbacks = this.callbacks.get(event.taskId);
     if (callbacks) {
       callbacks.push(callback);
     } else {
@@ -72,24 +52,20 @@ var eventBus = /*#__PURE__*/new ( /*#__PURE__*/function () {
     }
     debugger;
     window.parent.postMessage(event, '*');
-  };
-  _proto.callMessage = function callMessage(event) {
+  }
+  callMessage(event) {
     window.parent.postMessage(event, '*');
-  };
-  _proto.startTask = function startTask(command) {
+  }
+  startTask(command) {
     this.status = EventBusStatus.process;
     this.processTasks.push(command);
     if (this.onStarTask) {
       this.onStarTask(command);
     }
-  };
-  _proto.finishTask = function finishTask(taskId) {
-    var task = this.processTasks.find(function (t) {
-      return t.taskId == taskId;
-    });
-    var taskIndex = this.processTasks.findIndex(function (t) {
-      return t.taskId == taskId;
-    });
+  }
+  finishTask(taskId) {
+    let task = this.processTasks.find(t => t.taskId == taskId);
+    let taskIndex = this.processTasks.findIndex(t => t.taskId == taskId);
     if (taskIndex > -1) this.processTasks.splice(taskIndex, 1);
     if (this.onFinishTask) {
       this.onFinishTask(task);
@@ -98,34 +74,29 @@ var eventBus = /*#__PURE__*/new ( /*#__PURE__*/function () {
     if (this.processTasks.length == 0) {
       this.status = EventBusStatus.free;
     }
-  };
-  _proto.startEventListener = function startEventListener() {
-    var _this = this;
+  }
+  startEventListener() {
     if (this.started) return;
     this.started = true;
-    window.addEventListener('message', function (msg) {
-      var taskId = msg.data.taskId;
-      var listenerId = msg.data.listenerId;
+    window.addEventListener('message', msg => {
+      let taskId = msg.data.taskId;
+      let listenerId = msg.data.listenerId;
       debugger;
       /**处理任务 */
       if (msg.data.command) {
-        var callbacks = _this.listeners.get(msg.data.command);
+        let callbacks = this.listeners.get(msg.data.command);
         if (callbacks) {
           debugger;
-          callbacks.forEach(function (c) {
-            return c.handle(msg.data);
-          });
-          _this.finishTask(taskId);
+          callbacks.forEach(c => c.handle(msg.data));
+          this.finishTask(taskId);
         }
         return;
       } else {
-        var _callbacks = _this.callbacks.get(taskId);
-        if (_callbacks) {
-          _callbacks.forEach(function (c) {
-            return c(msg.data);
-          });
+        let callbacks = this.callbacks.get(taskId);
+        if (callbacks) {
+          callbacks.forEach(c => c(msg.data));
         }
-        _this.finishTask(taskId);
+        this.finishTask(taskId);
       }
       if (listenerId) {
         alert(listenerId);
@@ -142,79 +113,67 @@ var eventBus = /*#__PURE__*/new ( /*#__PURE__*/function () {
   //         }
   //     })
   // }
-  ;
-  _proto.registerListener = function registerListener(eventType, listener) {
-    var listeners = this.listeners.get(eventType);
+  registerListener(eventType, listener) {
+    let listeners = this.listeners.get(eventType);
     if (listeners) {
       listeners.push(listener);
     } else {
       this.listeners.set(eventType, [listener]);
     }
-  };
-  return EventBus;
-}())();
-var CalendarEvent = /*#__PURE__*/function (_EventListener) {
-  _inheritsLoose(CalendarEvent, _EventListener);
-  function CalendarEvent(handle) {
-    var _this2;
-    _this2 = _EventListener.call(this) || this;
-    _this2.listenerId = 'calendar' + Date.now();
+  }
+}();
+class CalendarEvent extends EventListener {
+  constructor(handle) {
+    super();
+    this.listenerId = 'calendar' + Date.now();
     /**事件堆栈 */
-    _this2.eventStack = [];
-    _this2.handle = function (data) {
-      _this2.data = data;
+    this.eventStack = [];
+    this.handle = data => {
+      this.data = data;
       handle(data);
     };
     if (!eventBus.started) {
       eventBus.startEventListener();
     }
     debugger;
-    eventBus.registerListener('test', _assertThisInitialized(_this2));
-    return _this2;
+    eventBus.registerListener('test', this);
   }
-  var _proto2 = CalendarEvent.prototype;
-  _proto2.emit = function emit(date) {
+  emit(date) {
     // alert(JSON.stringify(this.data));
     debugger;
     window.frames[0].postMessage({
-      date: date,
+      date,
       taskId: this.data.taskId
     }, '*');
-  };
-  _proto2.startListen = function startListen() {};
-  return CalendarEvent;
-}(EventListener);
-var SettingEvent = /*#__PURE__*/function (_EventListener2) {
-  _inheritsLoose(SettingEvent, _EventListener2);
-  function SettingEvent(handle) {
-    var _this3;
-    _this3 = _EventListener2.call(this) || this;
-    _this3.listenerId = 'calendar' + Date.now();
+  }
+  startListen() {}
+}
+class SettingEvent extends EventListener {
+  constructor(handle) {
+    super();
+    this.listenerId = 'calendar' + Date.now();
     /**事件堆栈 */
-    _this3.eventStack = [];
-    _this3.handle = function (data) {
-      _this3.data = data;
+    this.eventStack = [];
+    this.handle = data => {
+      this.data = data;
       handle(data);
     };
     if (!eventBus.started) {
       eventBus.startEventListener();
     }
     debugger;
-    eventBus.registerListener('send-setting', _assertThisInitialized(_this3));
-    return _this3;
+    eventBus.registerListener('send-setting', this);
   }
-  var _proto3 = SettingEvent.prototype;
-  _proto3.emit = function emit(date) {
+  emit(date) {
     // alert(JSON.stringify(this.data));
     debugger;
     window.frames[0].postMessage({
-      date: date,
+      date,
       taskId: this.data.taskId
     }, '*');
-  };
-  _proto3.startListen = function startListen() {};
-  return SettingEvent;
-}(EventListener);
+  }
+  startListen() {}
+}
 
 var index$1 = {
     __proto__: null,
@@ -258,71 +217,53 @@ var ShellStatus;
  *
  *
 */
-var AppSchell = /*#__PURE__*/function () {
-  function AppSchell() {
+class AppSchell {
+  constructor() {
     this.apps = [];
   }
-  var _proto = AppSchell.prototype;
-  _proto.addApps = function addApps(app_list) {
-    var _this$apps;
-    (_this$apps = this.apps).push.apply(_this$apps, app_list);
+  addApps(app_list) {
+    this.apps.push(...app_list);
   }
-  /** 获取并行加载app */;
-  _proto.loadParallel = function loadParallel() {
-    var parallelApps = this.apps.filter(function (app) {
-      return app.loadMethod == LoadMethod.Parallel;
-    });
+  /** 获取并行加载app */
+  loadParallel() {
+    let parallelApps = this.apps.filter(app => app.loadMethod == LoadMethod.Parallel);
     return parallelApps;
   }
   /**
    * 获取预加载app
-   */;
-  _proto.getPreloadApps = function getPreloadApps() {
-    var parallelApps = this.apps.filter(function (app) {
-      return app.loadMethod == LoadMethod.Preload;
-    });
+   */
+  getPreloadApps() {
+    let parallelApps = this.apps.filter(app => app.loadMethod == LoadMethod.Preload);
     return parallelApps;
   }
   /**
    * 获取惰性加载app
    * @returns
-   */;
-  _proto.getInertLoadApps = function getInertLoadApps() {
-    var parallelApps = this.apps.filter(function (app) {
-      return app.loadMethod == LoadMethod.InertLoad;
-    });
+   */
+  getInertLoadApps() {
+    let parallelApps = this.apps.filter(app => app.loadMethod == LoadMethod.InertLoad);
     return parallelApps;
   }
-  /**获取懒加载apps */;
-  _proto.getLazyLoadApps = function getLazyLoadApps() {
-    var parallelApps = this.apps.filter(function (app) {
-      return app.loadMethod == LoadMethod.LazyLoad;
-    });
+  /**获取懒加载apps */
+  getLazyLoadApps() {
+    let parallelApps = this.apps.filter(app => app.loadMethod == LoadMethod.LazyLoad);
     return parallelApps;
   }
   /**
    * 移除apps
    * @param app_list
-   */;
-  _proto.removeApps = function removeApps() {
-    var _this = this;
-    for (var _len = arguments.length, app_list = new Array(_len), _key = 0; _key < _len; _key++) {
-      app_list[_key] = arguments[_key];
-    }
-    app_list.forEach(function (app) {
-      var indexOf = _this.apps.findIndex(function (a) {
-        return a.id == app.id;
-      });
-      if (indexOf > -1) _this.apps.splice(indexOf, 1);
+   */
+  removeApps(...app_list) {
+    app_list.forEach(app => {
+      let indexOf = this.apps.findIndex(a => a.id == app.id);
+      if (indexOf > -1) this.apps.splice(indexOf, 1);
     });
-  };
-  _proto.setMasterStatus = function setMasterStatus(appStatus) {
+  }
+  setMasterStatus(appStatus) {
     this.getMasterApp().loadStatus = appStatus;
-  };
-  _proto.setAppStatus = function setAppStatus(appId, loadStatus) {
-    var app = this.apps.find(function (app) {
-      return app.id == appId;
-    });
+  }
+  setAppStatus(appId, loadStatus) {
+    let app = this.apps.find(app => app.id == appId);
     if (app) {
       app.loadStatus = loadStatus;
     }
@@ -330,20 +271,15 @@ var AppSchell = /*#__PURE__*/function () {
     if (this.onAppChange) {
       this.onAppChange(this.apps);
     }
-  };
-  _proto.getAppStatus = function getAppStatus(appId) {
-    var app = this.apps.find(function (app) {
-      return app.id == appId;
-    });
+  }
+  getAppStatus(appId) {
+    let app = this.apps.find(app => app.id == appId);
     return app ? app.loadStatus : null;
-  };
-  _proto.getMasterApp = function getMasterApp() {
-    return this.apps.find(function (app) {
-      return app.isMaster;
-    });
-  };
-  return AppSchell;
-}();
+  }
+  getMasterApp() {
+    return this.apps.find(app => app.isMaster);
+  }
+}
 
 
 
@@ -356,77 +292,65 @@ var index$2 = {
 };
 
 if (window['id'] == 'child') {
-  var resultEl = /*#__PURE__*/document.getElementById('result');
+  let resultEl = /*#__PURE__*/document.getElementById('result');
   eventBus.startEventListener();
-  var taskNumEl = /*#__PURE__*/document.getElementById('taskNum');
-  var statusEl = /*#__PURE__*/document.getElementById('status');
-  eventBus.onStarTask = function (data) {
+  let taskNumEl = /*#__PURE__*/document.getElementById('taskNum');
+  let statusEl = /*#__PURE__*/document.getElementById('status');
+  eventBus.onStarTask = data => {
     taskNumEl.value = eventBus.processTasks.length + '';
     statusEl.innerText = eventBus.status;
   };
-  eventBus.onFinishTask = function (data) {
+  eventBus.onFinishTask = data => {
     taskNumEl.value = eventBus.processTasks.length + '';
     statusEl.innerText = eventBus.status;
   };
   window['child'] = {
-    sendMessage: function sendMessage() {
-      return eventBus.callMessage({
-        command: 'test',
-        type: 'message'
-      });
-    },
-    callTask: function callTask() {
-      return eventBus.callTask({
-        command: 'test',
-        type: 'task'
-      }, function (data) {
-        debugger;
-        resultEl.innerText = data.date;
-      });
-    }
+    sendMessage: () => eventBus.callMessage({
+      command: 'test',
+      type: 'message'
+    }),
+    callTask: () => eventBus.callTask({
+      command: 'test',
+      type: 'task'
+    }, data => {
+      debugger;
+      resultEl.innerText = data.date;
+    })
   };
 }
 
 // import { AppSchell } from '../shell/index';
 if (window['id'] == 'parent') {
-  var statusEl$1 = /*#__PURE__*/document.getElementById('status');
-  var calenderEl = /*#__PURE__*/document.getElementById('calender');
+  let statusEl = /*#__PURE__*/document.getElementById('status');
+  let calenderEl = /*#__PURE__*/document.getElementById('calender');
   eventBus.startEventListener();
-  eventBus.onStarTask = function (cmd) {
-    statusEl$1.innerText = eventBus.status;
+  eventBus.onStarTask = cmd => {
+    statusEl.innerText = eventBus.status;
     alert('开始任务' + cmd.command);
   };
   // eventBus.startCallback();
-  var eventListen = /*#__PURE__*/new CalendarEvent(function (_) {
+  let eventListen = /*#__PURE__*/new CalendarEvent(_ => {
     calenderEl.value = '';
     calenderEl.placeholder = '显示日期';
   });
   // eventBus.registerListener('test', (_: any) => alert('command'));
   window['p'] = {
-    backData: function backData() {
-      return eventListen.emit(new Date(calenderEl.value));
-    },
-    removeListener: function removeListener() {
-      return eventListen.data;
-    },
-    displayEventData: function displayEventData() {
-      return alert(JSON.stringify(eventListen.data));
-    }
+    backData: () => eventListen.emit(new Date(calenderEl.value)),
+    removeListener: () => eventListen.data,
+    displayEventData: () => alert(JSON.stringify(eventListen.data))
   };
 }
 
 if (window.name == 'shell-parent') {
-  var status = /*#__PURE__*/document.getElementById('status');
-  var child1_status = /*#__PURE__*/document.getElementById('child1_status');
-  var app_num = /*#__PURE__*/document.getElementById('app_num');
-  var app_finish_num = /*#__PURE__*/document.getElementById('app_finish_num');
+  let status = /*#__PURE__*/document.getElementById('status');
+  let child1_status = /*#__PURE__*/document.getElementById('child1_status');
+  let app_num = /*#__PURE__*/document.getElementById('app_num');
+  let app_finish_num = /*#__PURE__*/document.getElementById('app_finish_num');
   eventBus.startEventListener();
-  new SettingEvent(function (data) {
-    return alert("setting");
-  });
-  var child1 = 'child1';
-  var child2 = 'child2';
-  var appShell = /*#__PURE__*/new AppSchell();
+  new SettingEvent(data => alert(`setting`));
+  let child1 = 'child1';
+  let child2 = 'child2';
+  let appShell = /*#__PURE__*/new AppSchell();
   appShell.addApps([{
     id: 'master',
     url: 'http://localhost:3000/test/shell/parent.html',
@@ -441,25 +365,23 @@ if (window.name == 'shell-parent') {
     url: 'http://localhost:3000/test/shell/child2.html',
     loadMethod: LoadMethod.LazyLoad
   }]);
-  appShell.onAppChange = function (apps) {
+  appShell.onAppChange = apps => {
     debugger;
     child1_status.innerText = appShell.getAppStatus(child1);
     app_num.innerText = appShell.apps.length + '';
-    app_finish_num.innerText = appShell.apps.filter(function (app) {
-      return app.loadStatus == AppLoadStatus.Finished;
-    }).length + '';
+    app_finish_num.innerText = appShell.apps.filter(app => app.loadStatus == AppLoadStatus.Finished).length + '';
   };
   appShell.setMasterStatus(AppLoadStatus.Finished);
   status.innerText = AppLoadStatus.Finished;
   window['parent'] = {
-    onChildLoad: function onChildLoad(appId) {
+    onChildLoad: appId => {
       appShell.setAppStatus(appId, AppLoadStatus.Finished);
     },
-    addChild2: function addChild2() {
-      var iframe = document.createElement('iframe');
+    addChild2: () => {
+      let iframe = document.createElement('iframe');
       iframe.src = "http://localhost:3000/test/shell/child2.html";
-      iframe.onload = function () {
-        alert("child2 load");
+      iframe.onload = () => {
+        alert(`child2 load`);
         appShell.setAppStatus(child2, AppLoadStatus.Finished);
       };
       document.body.append(iframe);
@@ -470,7 +392,7 @@ if (window.name == 'shell-parent') {
 if (window.name == 'shell-child1') {
   // alert('child1')
   eventBus.startEventListener();
-  setTimeout(function () {
+  setTimeout(() => {
     eventBus.callMessage({
       command: 'send-setting',
       type: 'message'

@@ -12,7 +12,8 @@ const crudResolversMap = {
   User: crudResolvers.UserCrudResolver,
   Post: crudResolvers.PostCrudResolver,
   Tenant: crudResolvers.TenantCrudResolver,
-  App: crudResolvers.AppCrudResolver
+  App: crudResolvers.AppCrudResolver,
+  Emr: crudResolvers.EmrCrudResolver
 };
 const actionResolversMap = {
   User: {
@@ -74,13 +75,29 @@ const actionResolversMap = {
     updateManyApp: actionResolvers.UpdateManyAppResolver,
     updateOneApp: actionResolvers.UpdateOneAppResolver,
     upsertOneApp: actionResolvers.UpsertOneAppResolver
+  },
+  Emr: {
+    aggregateEmr: actionResolvers.AggregateEmrResolver,
+    createOneEmr: actionResolvers.CreateOneEmrResolver,
+    deleteManyEmr: actionResolvers.DeleteManyEmrResolver,
+    deleteOneEmr: actionResolvers.DeleteOneEmrResolver,
+    findFirstEmr: actionResolvers.FindFirstEmrResolver,
+    findFirstEmrOrThrow: actionResolvers.FindFirstEmrOrThrowResolver,
+    emrs: actionResolvers.FindManyEmrResolver,
+    emr: actionResolvers.FindUniqueEmrResolver,
+    getEmr: actionResolvers.FindUniqueEmrOrThrowResolver,
+    groupByEmr: actionResolvers.GroupByEmrResolver,
+    updateManyEmr: actionResolvers.UpdateManyEmrResolver,
+    updateOneEmr: actionResolvers.UpdateOneEmrResolver,
+    upsertOneEmr: actionResolvers.UpsertOneEmrResolver
   }
 };
 const crudResolversInfo = {
   User: ["aggregateUser", "createOneUser", "deleteManyUser", "deleteOneUser", "findFirstUser", "findFirstUserOrThrow", "users", "user", "getUser", "groupByUser", "updateManyUser", "updateOneUser", "upsertOneUser"],
   Post: ["aggregatePost", "createOnePost", "deleteManyPost", "deleteOnePost", "findFirstPost", "findFirstPostOrThrow", "posts", "post", "getPost", "groupByPost", "updateManyPost", "updateOnePost", "upsertOnePost"],
   Tenant: ["aggregateTenant", "createOneTenant", "deleteManyTenant", "deleteOneTenant", "findFirstTenant", "findFirstTenantOrThrow", "tenants", "tenant", "getTenant", "groupByTenant", "updateManyTenant", "updateOneTenant", "upsertOneTenant"],
-  App: ["aggregateApp", "createOneApp", "deleteManyApp", "deleteOneApp", "findFirstApp", "findFirstAppOrThrow", "apps", "app", "getApp", "groupByApp", "updateManyApp", "updateOneApp", "upsertOneApp"]
+  App: ["aggregateApp", "createOneApp", "deleteManyApp", "deleteOneApp", "findFirstApp", "findFirstAppOrThrow", "apps", "app", "getApp", "groupByApp", "updateManyApp", "updateOneApp", "upsertOneApp"],
+  Emr: ["aggregateEmr", "createOneEmr", "deleteManyEmr", "deleteOneEmr", "findFirstEmr", "findFirstEmrOrThrow", "emrs", "emr", "getEmr", "groupByEmr", "updateManyEmr", "updateOneEmr", "upsertOneEmr"]
 };
 const argsInfo = {
   AggregateUserArgs: ["where", "orderBy", "cursor", "take", "skip"],
@@ -134,7 +151,20 @@ const argsInfo = {
   GroupByAppArgs: ["where", "orderBy", "by", "having", "take", "skip"],
   UpdateManyAppArgs: ["data", "where"],
   UpdateOneAppArgs: ["data", "where"],
-  UpsertOneAppArgs: ["where", "create", "update"]
+  UpsertOneAppArgs: ["where", "create", "update"],
+  AggregateEmrArgs: ["where", "orderBy", "cursor", "take", "skip"],
+  CreateOneEmrArgs: ["data"],
+  DeleteManyEmrArgs: ["where"],
+  DeleteOneEmrArgs: ["where"],
+  FindFirstEmrArgs: ["where", "orderBy", "cursor", "take", "skip", "distinct"],
+  FindFirstEmrOrThrowArgs: ["where", "orderBy", "cursor", "take", "skip", "distinct"],
+  FindManyEmrArgs: ["where", "orderBy", "cursor", "take", "skip", "distinct"],
+  FindUniqueEmrArgs: ["where"],
+  FindUniqueEmrOrThrowArgs: ["where"],
+  GroupByEmrArgs: ["where", "orderBy", "by", "having", "take", "skip"],
+  UpdateManyEmrArgs: ["data", "where"],
+  UpdateOneEmrArgs: ["data", "where"],
+  UpsertOneEmrArgs: ["where", "create", "update"]
 };
 
 type ResolverModelNames = keyof typeof crudResolversMap;
@@ -317,7 +347,8 @@ const modelsInfo = {
   User: ["id", "email", "name", "tenantId", "username", "password"],
   Post: ["id", "createdAt", "updatedAt", "published", "title", "content", "authorId"],
   Tenant: ["id", "name", "createAt", "updateAt", "enable", "appSettings"],
-  App: ["id", "name", "createAt", "updateAt", "description", "icon", "readmeUrl"]
+  App: ["id", "name", "createAt", "updateAt", "description", "icon", "readmeUrl"],
+  Emr: ["id", "title", "meta", "createAt", "updateAt"]
 };
 
 type ModelNames = keyof typeof models;
@@ -364,6 +395,8 @@ const outputsInfo = {
   TenantGroupBy: ["id", "name", "createAt", "updateAt", "enable", "appSettings", "_count", "_min", "_max"],
   AggregateApp: ["_count", "_min", "_max"],
   AppGroupBy: ["id", "name", "createAt", "updateAt", "description", "icon", "readmeUrl", "_count", "_min", "_max"],
+  AggregateEmr: ["_count", "_min", "_max"],
+  EmrGroupBy: ["id", "title", "meta", "createAt", "updateAt", "_count", "_min", "_max"],
   AffectedRowsOutput: ["count"],
   UserCount: ["posts", "apps"],
   UserCountAggregate: ["id", "email", "name", "tenantId", "username", "password", "_all"],
@@ -379,7 +412,10 @@ const outputsInfo = {
   AppCount: ["users"],
   AppCountAggregate: ["id", "name", "createAt", "updateAt", "description", "icon", "readmeUrl", "_all"],
   AppMinAggregate: ["id", "name", "createAt", "updateAt", "description", "icon", "readmeUrl"],
-  AppMaxAggregate: ["id", "name", "createAt", "updateAt", "description", "icon", "readmeUrl"]
+  AppMaxAggregate: ["id", "name", "createAt", "updateAt", "description", "icon", "readmeUrl"],
+  EmrCountAggregate: ["id", "title", "meta", "createAt", "updateAt", "_all"],
+  EmrMinAggregate: ["id", "title", "meta", "createAt", "updateAt"],
+  EmrMaxAggregate: ["id", "title", "meta", "createAt", "updateAt"]
 };
 
 type OutputTypesNames = keyof typeof outputTypes;
@@ -440,6 +476,11 @@ const inputsInfo = {
   AppWhereUniqueInput: ["id"],
   AppOrderByWithAggregationInput: ["id", "name", "createAt", "updateAt", "description", "icon", "readmeUrl", "_count", "_max", "_min"],
   AppScalarWhereWithAggregatesInput: ["AND", "OR", "NOT", "id", "name", "createAt", "updateAt", "description", "icon", "readmeUrl"],
+  EmrWhereInput: ["AND", "OR", "NOT", "id", "title", "meta", "createAt", "updateAt"],
+  EmrOrderByWithRelationInput: ["id", "title", "meta", "createAt", "updateAt"],
+  EmrWhereUniqueInput: ["id"],
+  EmrOrderByWithAggregationInput: ["id", "title", "meta", "createAt", "updateAt", "_count", "_max", "_min"],
+  EmrScalarWhereWithAggregatesInput: ["AND", "OR", "NOT", "id", "title", "meta", "createAt", "updateAt"],
   UserCreateInput: ["id", "email", "name", "posts", "username", "password", "tenant", "apps"],
   UserUpdateInput: ["id", "email", "name", "posts", "username", "password", "tenant", "apps"],
   UserUpdateManyMutationInput: ["id", "email", "name", "username", "password"],
@@ -452,6 +493,9 @@ const inputsInfo = {
   AppCreateInput: ["id", "name", "createAt", "updateAt", "description", "icon", "readmeUrl", "users"],
   AppUpdateInput: ["id", "name", "createAt", "updateAt", "description", "icon", "readmeUrl", "users"],
   AppUpdateManyMutationInput: ["id", "name", "createAt", "updateAt", "description", "icon", "readmeUrl"],
+  EmrCreateInput: ["id", "title", "meta", "createAt", "updateAt"],
+  EmrUpdateInput: ["id", "title", "meta", "createAt", "updateAt"],
+  EmrUpdateManyMutationInput: ["id", "title", "meta", "createAt", "updateAt"],
   StringFilter: ["equals", "in", "notIn", "lt", "lte", "gt", "gte", "contains", "startsWith", "endsWith", "not"],
   StringNullableFilter: ["equals", "in", "notIn", "lt", "lte", "gt", "gte", "contains", "startsWith", "endsWith", "not"],
   PostListRelationFilter: ["every", "some", "none"],
@@ -480,6 +524,9 @@ const inputsInfo = {
   AppCountOrderByAggregateInput: ["id", "name", "createAt", "updateAt", "description", "icon", "readmeUrl"],
   AppMaxOrderByAggregateInput: ["id", "name", "createAt", "updateAt", "description", "icon", "readmeUrl"],
   AppMinOrderByAggregateInput: ["id", "name", "createAt", "updateAt", "description", "icon", "readmeUrl"],
+  EmrCountOrderByAggregateInput: ["id", "title", "meta", "createAt", "updateAt"],
+  EmrMaxOrderByAggregateInput: ["id", "title", "meta", "createAt", "updateAt"],
+  EmrMinOrderByAggregateInput: ["id", "title", "meta", "createAt", "updateAt"],
   PostCreateNestedManyWithoutAuthorInput: ["create", "connectOrCreate", "connect"],
   TenantCreateNestedOneWithoutUsersInput: ["create", "connectOrCreate", "connect"],
   AppCreateNestedManyWithoutUsersInput: ["create", "connectOrCreate", "connect"],

@@ -1,5 +1,6 @@
 export { AffectedRowsOutput } from "./AffectedRowsOutput";
 export { AggregateApp } from "./AggregateApp";
+export { AggregateEmr } from "./AggregateEmr";
 export { AggregatePost } from "./AggregatePost";
 export { AggregateTenant } from "./AggregateTenant";
 export { AggregateUser } from "./AggregateUser";
@@ -8,6 +9,10 @@ export { AppCountAggregate } from "./AppCountAggregate";
 export { AppGroupBy } from "./AppGroupBy";
 export { AppMaxAggregate } from "./AppMaxAggregate";
 export { AppMinAggregate } from "./AppMinAggregate";
+export { EmrCountAggregate } from "./EmrCountAggregate";
+export { EmrGroupBy } from "./EmrGroupBy";
+export { EmrMaxAggregate } from "./EmrMaxAggregate";
+export { EmrMinAggregate } from "./EmrMinAggregate";
 export { PostCountAggregate } from "./PostCountAggregate";
 export { PostGroupBy } from "./PostGroupBy";
 export { PostMaxAggregate } from "./PostMaxAggregate";
