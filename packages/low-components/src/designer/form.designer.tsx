@@ -1,8 +1,8 @@
-import { Button, CheckboxOptionType, Form, Input, Select, Tabs, Tag } from "antd";
+import { Button, CheckboxOptionType, Form, Input, Select, Tabs, Tag, Tooltip } from "antd";
 import React, { useState } from "react";
 import { AutoCheckboxOptions } from "../components/AutoCheckbox";
 import { NumberDesigner } from "./components/number-designer";
-import { EditOutlined, DeleteOutlined } from '@ant-design/icons';
+import { EditOutlined, DeleteOutlined, QuestionCircleFilled } from '@ant-design/icons';
 import { ConditionPicker } from "./components/condition-picker";
 import { WhereCondition } from "datasource/dist/prisma";
 // import { PlaceholderDesigner } from "./components/placeholder-designer";
@@ -70,6 +70,7 @@ export function FormDesigner(prop: AutoCheckboxOptions & { onStateChange: (state
     let label = '';
     let designerCompoennts: any[] = [];
     let datasourceComponents: any[] = [];
+    let jsonschemaComponents: any[] = []
     // const [state, setState] = useState(prop);
 
     switch (prop.type) {
@@ -123,7 +124,24 @@ export function FormDesigner(prop: AutoCheckboxOptions & { onStateChange: (state
                 children: <>
                     <ConditionDesign prop={prop} whereCondition={prop.whereCondition} ></ConditionDesign>
                 </>
-            }]
+            }];
+            jsonschemaComponents = [{
+                label: '最小长度',
+                tooltip: '设置为0则无限制,多选为数量项限制',
+                children: <>
+                    <Input type={'number'} defaultValue={prop.min} onChange={(e) => changeProp(prop, 'min', e.target.value)}></Input>
+                </>
+            },
+
+            {
+                label: '最大长度',
+                tooltip: '设置为0则无限制,多选为数量项限制',
+                children: <>
+                    <Input type={'number'} defaultValue={prop.max} onChange={(e) => changeProp(prop, 'max', e.target.value)}></Input>
+                </>
+            },
+
+            ]
 
             break;
     };
@@ -159,7 +177,22 @@ export function FormDesigner(prop: AutoCheckboxOptions & { onStateChange: (state
         {
             key: 'validation',
             label: '数据校验',
-            children: designerCompoennts
+            children: jsonschemaComponents.map(item => {
+                return <Form.Item
+                    label={item.label}
+                    name="username"
+
+                ><div style={{ display: 'flex' }}>
+                        {item.tooltip ? <div style={{ display: 'flex', alignItems: 'center', marginRight: '20px' }}><Tooltip title={item.tooltip}>
+
+                            <QuestionCircleFilled />
+                        </Tooltip>  </div> : null}
+                        {item.children}
+                    </div>
+                </Form.Item>
+
+            }
+            )
         },
 
     ]

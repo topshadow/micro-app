@@ -21,7 +21,9 @@ export interface AutoCheckboxOptions {
     maxItemDisplay: number;
     allowSearch: boolean;
     searchKey: string;
-    whereCondition?: WhereCondition<any>
+    whereCondition?: WhereCondition<any>;
+    min?: number;
+    max?: number;
 }
 
 export function AutoCheckbox(opt: AutoCheckboxOptions) {
@@ -61,9 +63,56 @@ export function AutoCheckbox(opt: AutoCheckboxOptions) {
 
 
     return <>
-        {opt.fields}
+        {opt.fields} {opt.min} {opt.max}
         <div style={{ height: MaxHeight + 'px', overflowY: 'scroll' }}>
-            {options.map(option => <div><Checkbox style={{ height: ItemHeight + 'px' }} defaultChecked={values.includes(option[opt.valueKey])}>{option[opt.labelKey]}</Checkbox></div>)}
+            {values.join('-')}
+            {options.map(option => <div><Checkbox style={{ height: ItemHeight + 'px' }} onChange={(e) => {
+                // let value = e.target.checked;
+                // debugger;
+                // if (values.includes(opti)) {
+                //     let index = values.indexOf(value);
+                //     values.splice(index, 1)
+                // } else {
+                //     values.push(value);
+                // }
+                // setValues(values)
+                debugger;
+
+                if (e.target.checked) {
+                    if (!values.includes(option[opt.valueKey])) {
+                        if (opt.max && values.length >= opt.max) {
+                            alert('不得大于最大项' + opt.max)
+                        } else {
+                            values.push(option[opt.valueKey]);
+                        }
+                    } else {
+                        let index = values.indexOf(option[opt.valueKey]);
+                        if (opt.min && values.length <= opt.min) {
+                            alert('不得小于最小项' + opt.min)
+                        } else {
+                            values.splice(index, 1);
+
+                        }
+
+                    }
+
+                } else {
+                    let index = values.indexOf(option[opt.valueKey]);
+                    values.splice(index, 1);
+
+                }
+                setValues(values.map(v => v))
+
+                // if (opt.min || opt.max) {
+                //     let length = values.length;
+                //     if (opt.min && opt.min <= length) {
+                //         alert('不允许小于最小项' + opt.min)
+                //     } else if (opt.max && opt.max >= length) {
+                //         alert('不允许大于最多项' + opt.max)
+                //     }
+
+                // }
+            }} defaultChecked={values.includes(option[opt.valueKey])} checked={values.includes(option[opt.valueKey])}>{option[opt.labelKey]}</Checkbox></div>)}
         </div>
     </>
 
