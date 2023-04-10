@@ -73,6 +73,7 @@ function changeComponent() {
 
 
 }
+
 window.setCurrentControl = null;
 let oldWindow: any = null;
 let ctrl = window;
