@@ -143,7 +143,7 @@ const onLoad = () => {
           autostart:
             [],
           pluginsData: [
-            'http://localhost:8001/config.json'
+            'http://localhost:5173/config.json'
 
           ]
         },
