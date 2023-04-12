@@ -8,17 +8,17 @@ let oldWindow = {};
 // }
 
 export function addControl(meta: Meta) {
-    oldWindow;
-    plugin;
+    // oldWindow;
+    // plugin;
     debugger;
-    window.Asc.plugin.executeMethod("RemoveContentControl", [511]);
-    window.Asc.plugin.executeMethod("AddContentControlList", [1, [{ Display: "a", Value: "a" }], { "Id": 511, Tag: JSON.stringify(meta), PlaceHolderText: 'checkbox', Lock: 3, }]);
+    window.Asc.plugin.executeMethod("RemoveContentControl", [meta.id]);
+    window.Asc.plugin.executeMethod("AddContentControlList", [1, [{ Display: "a", Value: "a" }], { "Id": meta.id, Tag: JSON.stringify(meta), PlaceHolderText: meta.placeholder || '悬浮提示', Lock: 3, }]);
 
 
 
 
 }
+window['addControl'] = addControl;
+export let controlsMap: { [key: number | string]: any } = {}
 
-export let plugin = {
-    Asc: null
-}
+window.controlsMap = controlsMap

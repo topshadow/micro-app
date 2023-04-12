@@ -1,0 +1,905 @@
+{
+    "type": "document",
+    "content": [
+        {
+            "bFromDocument": true,
+            "pPr": {
+                "jc": "start",
+                "tabs": [],
+                "bFromDocument": true,
+                "type": "paraPr",
+                "pStyle": "34"
+            },
+            "rPr": {
+                "bFromDocument": true,
+                "type": "textPr"
+            },
+            "content": [
+                {
+                    "bFromDocument": true,
+                    "rPr": {
+                        "highlight": "none",
+                        "bFromDocument": true,
+                        "type": "textPr"
+                    },
+                    "content": [],
+                    "footnotes": [],
+                    "endnotes": [],
+                    "reviewInfo": {
+                        "userId": "",
+                        "author": "",
+                        "date": null,
+                        "moveType": "noMove",
+                        "prevType": -1
+                    },
+                    "reviewType": "common",
+                    "type": "run"
+                },
+                {
+                    "bFromDocument": true,
+                    "rPr": {
+                        "bFromDocument": true,
+                        "type": "textPr"
+                    },
+                    "content": [
+                        {
+                            "docPr": {
+                                "descr": null,
+                                "hidden": null,
+                                "id": 1405480433,
+                                "name": "",
+                                "title": null
+                            },
+                            "effectExtent": {
+                                "b": 3174,
+                                "l": 3174,
+                                "r": 3174,
+                                "t": 3174
+                            },
+                            "extent": {
+                                "cy": 3276599,
+                                "cx": 5362574
+                            },
+                            "graphic": {
+                                "bWordShape": true,
+                                "extX": 5362574,
+                                "extY": 3276599,
+                                "spPr": {
+                                    "custGeom": {
+                                        "ahLst": {
+                                            "ahPolar": [],
+                                            "ahXY": []
+                                        },
+                                        "avLst": {},
+                                        "adjLst": {},
+                                        "cnxLst": [
+                                            {
+                                                "pos": {
+                                                    "x": "hc",
+                                                    "y": "t"
+                                                },
+                                                "ang": "_3cd4"
+                                            },
+                                            {
+                                                "pos": {
+                                                    "x": "l",
+                                                    "y": "vc"
+                                                },
+                                                "ang": "cd2"
+                                            },
+                                            {
+                                                "pos": {
+                                                    "x": "hc",
+                                                    "y": "b"
+                                                },
+                                                "ang": "cd4"
+                                            },
+                                            {
+                                                "pos": {
+                                                    "x": "r",
+                                                    "y": "vc"
+                                                },
+                                                "ang": "0"
+                                            }
+                                        ],
+                                        "gdLst": [],
+                                        "pathLst": [
+                                            {
+                                                "commands": [
+                                                    {
+                                                        "id": "moveTo",
+                                                        "pt": {
+                                                            "x": "l",
+                                                            "y": "t"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lnTo",
+                                                        "pt": {
+                                                            "x": "r",
+                                                            "y": "t"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lnTo",
+                                                        "pt": {
+                                                            "x": "r",
+                                                            "y": "b"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "lnTo",
+                                                        "pt": {
+                                                            "x": "l",
+                                                            "y": "b"
+                                                        }
+                                                    },
+                                                    {
+                                                        "id": "close"
+                                                    }
+                                                ],
+                                                "extrusionOk": false,
+                                                "fill": "norm",
+                                                "h": null,
+                                                "stroke": true,
+                                                "w": null
+                                            }
+                                        ],
+                                        "rect": {
+                                            "Vd": "l",
+                                            "t": "t",
+                                            "r": "r",
+                                            "b": "b"
+                                        },
+                                        "preset": "rect"
+                                    },
+                                    "effectDag": null,
+                                    "effectLst": null,
+                                    "ln": {
+                                        "fill": {
+                                            "fill": {
+                                                "color": {
+                                                    "rgba": {
+                                                        "red": 0,
+                                                        "green": 0,
+                                                        "blue": 0,
+                                                        "alpha": 255
+                                                    },
+                                                    "color": {
+                                                        "rgba": {
+                                                            "red": 0,
+                                                            "green": 0,
+                                                            "blue": 0,
+                                                            "alpha": 255
+                                                        },
+                                                        "id": "black",
+                                                        "type": "prst"
+                                                    },
+                                                    "type": "uniColor"
+                                                },
+                                                "type": "solid"
+                                            },
+                                            "transparent": null,
+                                            "type": "fill"
+                                        },
+                                        "algn": null,
+                                        "w": 6350,
+                                        "prstDash": null,
+                                        "type": "stroke"
+                                    },
+                                    "fill": {
+                                        "fill": {
+                                            "color": {
+                                                "rgba": {
+                                                    "red": 0,
+                                                    "green": 0,
+                                                    "blue": 0,
+                                                    "alpha": 255
+                                                },
+                                                "color": {
+                                                    "rgba": {
+                                                        "red": 0,
+                                                        "green": 0,
+                                                        "blue": 0,
+                                                        "alpha": 255
+                                                    },
+                                                    "id": 12,
+                                                    "type": "scheme"
+                                                },
+                                                "type": "uniColor"
+                                            },
+                                            "type": "solid"
+                                        },
+                                        "transparent": null,
+                                        "type": "fill"
+                                    },
+                                    "xfrm": {
+                                        "ext": {
+                                            "cx": 5362574,
+                                            "cy": 3276599
+                                        },
+                                        "off": {
+                                            "x": 0,
+                                            "y": 0
+                                        },
+                                        "flipH": false,
+                                        "flipV": false,
+                                        "rot": null,
+                                        "chOffX": null,
+                                        "chOffY": null,
+                                        "chExtX": null,
+                                        "chExtY": null
+                                    },
+                                    "bwMode": 0
+                                },
+                                "bodyPr": {
+                                    "anchor": "t",
+                                    "anchorCtr": false,
+                                    "bIns": 45720,
+                                    "compatLnSpc": false,
+                                    "forceAA": false,
+                                    "fromWordArt": false,
+                                    "horzOverflow": "overflow",
+                                    "lIns": 91440,
+                                    "numCol": 1,
+                                    "rIns": 91440,
+                                    "rtlCol": false,
+                                    "spcCol": 0,
+                                    "tIns": 45720,
+                                    "upright": false,
+                                    "vert": "horz",
+                                    "vertOverflow": "overflow",
+                                    "wrap": "square"
+                                },
+                                "content": {
+                                    "bPresentation": false,
+                                    "content": [
+                                        {
+                                            "bFromDocument": true,
+                                            "pPr": {
+                                                "bFromDocument": true,
+                                                "type": "paraPr"
+                                            },
+                                            "rPr": {
+                                                "highlight": "none",
+                                                "bFromDocument": true,
+                                                "type": "textPr"
+                                            },
+                                            "content": [
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [
+                                                        "sadsad"
+                                                    ],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": null,
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "run"
+                                                },
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": null,
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "endRun"
+                                                }
+                                            ],
+                                            "changes": [],
+                                            "type": "paragraph"
+                                        },
+                                        {
+                                            "bFromDocument": true,
+                                            "pPr": {
+                                                "bFromDocument": true,
+                                                "type": "paraPr"
+                                            },
+                                            "rPr": {
+                                                "bFromDocument": true,
+                                                "type": "textPr"
+                                            },
+                                            "content": [
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": "",
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "run"
+                                                },
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": "",
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "endRun"
+                                                }
+                                            ],
+                                            "changes": [],
+                                            "type": "paragraph"
+                                        },
+                                        {
+                                            "bFromDocument": true,
+                                            "pPr": {
+                                                "bFromDocument": true,
+                                                "type": "paraPr"
+                                            },
+                                            "rPr": {
+                                                "bFromDocument": true,
+                                                "type": "textPr"
+                                            },
+                                            "content": [
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": "",
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "run"
+                                                },
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": "",
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "endRun"
+                                                }
+                                            ],
+                                            "changes": [],
+                                            "type": "paragraph"
+                                        },
+                                        {
+                                            "bFromDocument": true,
+                                            "pPr": {
+                                                "bFromDocument": true,
+                                                "type": "paraPr"
+                                            },
+                                            "rPr": {
+                                                "bFromDocument": true,
+                                                "type": "textPr"
+                                            },
+                                            "content": [
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": "",
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "run"
+                                                },
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": "",
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "endRun"
+                                                }
+                                            ],
+                                            "changes": [],
+                                            "type": "paragraph"
+                                        },
+                                        {
+                                            "bFromDocument": true,
+                                            "pPr": {
+                                                "bFromDocument": true,
+                                                "type": "paraPr"
+                                            },
+                                            "rPr": {
+                                                "highlight": "none",
+                                                "bFromDocument": true,
+                                                "type": "textPr"
+                                            },
+                                            "content": [
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "highlight": "none",
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [
+                                                        "Dasdasd"
+                                                    ],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": "",
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "run"
+                                                },
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "highlight": "none",
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": "",
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "endRun"
+                                                }
+                                            ],
+                                            "changes": [],
+                                            "type": "paragraph"
+                                        },
+                                        {
+                                            "bFromDocument": true,
+                                            "pPr": {
+                                                "bFromDocument": true,
+                                                "type": "paraPr"
+                                            },
+                                            "rPr": {
+                                                "bFromDocument": true,
+                                                "type": "textPr"
+                                            },
+                                            "content": [
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": "",
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "run"
+                                                },
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": "",
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "endRun"
+                                                }
+                                            ],
+                                            "changes": [],
+                                            "type": "paragraph"
+                                        },
+                                        {
+                                            "bFromDocument": true,
+                                            "pPr": {
+                                                "bFromDocument": true,
+                                                "type": "paraPr"
+                                            },
+                                            "rPr": {
+                                                "highlight": "none",
+                                                "bFromDocument": true,
+                                                "type": "textPr"
+                                            },
+                                            "content": [
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "highlight": "none",
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [
+                                                        "Asdsad"
+                                                    ],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": "",
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "run"
+                                                },
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "highlight": "none",
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": "",
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "endRun"
+                                                }
+                                            ],
+                                            "changes": [],
+                                            "type": "paragraph"
+                                        },
+                                        {
+                                            "bFromDocument": true,
+                                            "pPr": {
+                                                "bFromDocument": true,
+                                                "type": "paraPr"
+                                            },
+                                            "rPr": {
+                                                "bFromDocument": true,
+                                                "type": "textPr"
+                                            },
+                                            "content": [
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": "",
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "run"
+                                                },
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": "",
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "endRun"
+                                                }
+                                            ],
+                                            "changes": [],
+                                            "type": "paragraph"
+                                        },
+                                        {
+                                            "bFromDocument": true,
+                                            "pPr": {
+                                                "bFromDocument": true,
+                                                "type": "paraPr"
+                                            },
+                                            "rPr": {
+                                                "highlight": "none",
+                                                "bFromDocument": true,
+                                                "type": "textPr"
+                                            },
+                                            "content": [
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "highlight": "none",
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [
+                                                        "Asdasd"
+                                                    ],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": "",
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "run"
+                                                },
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "highlight": "none",
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": "",
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "endRun"
+                                                }
+                                            ],
+                                            "changes": [],
+                                            "type": "paragraph"
+                                        },
+                                        {
+                                            "bFromDocument": true,
+                                            "pPr": {
+                                                "bFromDocument": true,
+                                                "type": "paraPr"
+                                            },
+                                            "rPr": {
+                                                "bFromDocument": true,
+                                                "type": "textPr"
+                                            },
+                                            "content": [
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "highlight": "none",
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [
+                                                        "dsadad"
+                                                    ],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": "",
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "run"
+                                                },
+                                                {
+                                                    "bFromDocument": true,
+                                                    "rPr": {
+                                                        "highlight": "none",
+                                                        "bFromDocument": true,
+                                                        "type": "textPr"
+                                                    },
+                                                    "content": [],
+                                                    "footnotes": [],
+                                                    "endnotes": [],
+                                                    "reviewInfo": {
+                                                        "userId": "",
+                                                        "author": "",
+                                                        "date": "",
+                                                        "moveType": "noMove",
+                                                        "prevType": -1
+                                                    },
+                                                    "reviewType": "common",
+                                                    "type": "endRun"
+                                                }
+                                            ],
+                                            "changes": [],
+                                            "type": "paragraph"
+                                        }
+                                    ],
+                                    "type": "docContent"
+                                },
+                                "modelId": null,
+                                "type": "shape",
+                                "id": "29_1382"
+                            },
+                            "positionH": {
+                                "relativeFrom": "column",
+                                "posOffset": 181949,
+                                "percent": false
+                            },
+                            "positionV": {
+                                "relativeFrom": "paragraph",
+                                "posOffset": 100424,
+                                "percent": false
+                            },
+                            "simplePos": {
+                                "x": 0,
+                                "y": 0,
+                                "use": false
+                            },
+                            "distB": 0,
+                            "distL": 115200,
+                            "distR": 115200,
+                            "distT": 0,
+                            "allowOverlap": true,
+                            "behindDoc": false,
+                            "hidden": null,
+                            "layoutInCell": true,
+                            "locked": false,
+                            "cNvGraphicFramePr": {
+                                "graphicFrameLocks": {}
+                            },
+                            "relativeHeight": 8192,
+                            "wrapType": "none",
+                            "drawingType": "anchor",
+                            "type": "paraDrawing"
+                        }
+                    ],
+                    "footnotes": [],
+                    "endnotes": [],
+                    "reviewInfo": {
+                        "userId": "",
+                        "author": "",
+                        "date": null,
+                        "moveType": "noMove",
+                        "prevType": -1
+                    },
+                    "reviewType": "common",
+                    "type": "run"
+                },
+                {
+                    "bFromDocument": true,
+                    "rPr": {
+                        "highlight": "none",
+                        "bFromDocument": true,
+                        "type": "textPr"
+                    },
+                    "content": [],
+                    "footnotes": [],
+                    "endnotes": [],
+                    "reviewInfo": {
+                        "userId": "",
+                        "author": "",
+                        "date": null,
+                        "moveType": "noMove",
+                        "prevType": -1
+                    },
+                    "reviewType": "common",
+                    "type": "run"
+                },
+                {
+                    "bFromDocument": true,
+                    "rPr": {
+                        "bFromDocument": true,
+                        "type": "textPr"
+                    },
+                    "content": [],
+                    "footnotes": [],
+                    "endnotes": [],
+                    "reviewInfo": {
+                        "userId": "",
+                        "author": "",
+                        "date": null,
+                        "moveType": "noMove",
+                        "prevType": -1
+                    },
+                    "reviewType": "common",
+                    "type": "endRun"
+                }
+            ],
+            "changes": [],
+            "type": "paragraph"
+        }
+    ]
+}

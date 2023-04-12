@@ -2,16 +2,15 @@
 import { createApp } from 'vue';
 import Office from './Office.vue';
 import Antd from 'ant-design-vue';
+import { controlsMap } from './lib/meta/control';
 
 declare var window: any;
-setInterval(() => {
-    window.control = { date: Date.now() };
 
-}, 1000)
 
 function hideApp() {
     let app = document.getElementById('app') as any;
     app.style.zIndex = -1;
+    window.control = null;
 
 }
 function ShowApp(x, y) {
@@ -33,6 +32,7 @@ function getEditFrame() {
 
 function setEditComponent(meta: any) {
     let parent = getEditFrame();
+    window['control'] = meta;
     if (parent) {
         window.frames[0].window.control = meta;
 
@@ -54,35 +54,48 @@ setTimeout(() => {
     createApp(Office).use(Antd).mount('#app');
 
 
+
+
     window.asc_docs_api.prototype.asc_registerCallback('asc_onHideContentControlsActions', () => { hideApp() });
     window.asc_docs_api.prototype.asc_registerCallback('asc_onShowContentControlsActions', (arg, x, y) => {
+        debugger;
+        let obj = arg.obj;
+
         let tag = arg.pr.get_Tag();
+        let id = arg.pr.get_Id();
+        debugger;
+        // controlsMap[id] = { pr: arg.pr, obj };
         let isComponent = true;
-        let meta = {};
+        let meta: any = {};
         try {
             meta = JSON.parse(tag);
+            meta.id = id;
+            // alert(JSON.stringify(meta))
+            window['control'] = meta;
             setEditComponent(meta);
 
         } catch {
+            alert('no component')
             isComponent = false;
         }
         debugger;
-        if (isComponent) {
-
+        if (!isComponent) {
+            window['control'] = null;
         }
         ShowApp(x, y);
 
 
         setTimeout(() => {
-            // editor_sdk.childNodes.forEach((n: any) => {
-            //     if (n.id) {
-            //         // alert(n.id)
-            //         if (n.id.includes('menu-container-asc-gen') && n.id != 'app') {
-            //             n.remove();
-            //         }
+            editor_sdk.childNodes.forEach((n: any) => {
+                if (n.id) {
+                    // alert(n.id)
+                    if (n.id.includes('menu-container-asc-gen') && n.id != 'app') {
+                        n.remove();
+                    }
 
-            //     }
-            // }, 300);
+                }
+            }, 3000);
+
 
 
         })

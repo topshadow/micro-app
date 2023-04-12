@@ -1,0 +1,217 @@
+{
+    "sdtPr": {
+        "alias": "",
+        "appearance": "boundingBox",
+        "equation": false,
+        "lock": "unlocked",
+        "picture": false,
+        "rPr": {
+            "bFromDocument": true,
+            "type": "textPr"
+        },
+        "showingPlcHdr": false,
+        "tag": "{\"id\":\"aa\",\"pid\":\"parent\",\"parentPosition\":2}",
+        "temporary": false
+    },
+    "sdtContent": {
+        "bPresentation": false,
+        "content": [
+            {
+                "bFromDocument": true,
+                "pPr": {
+                    "tabs": [],
+                    "bFromDocument": true,
+                    "type": "paraPr",
+                    "pStyle": "31_1539"
+                },
+                "rPr": {
+                    "bFromDocument": true,
+                    "type": "textPr"
+                },
+                "content": [
+                    {
+                        "bFromDocument": true,
+                        "rPr": {
+                            "bFromDocument": true,
+                            "type": "textPr"
+                        },
+                        "content": [],
+                        "footnotes": [],
+                        "endnotes": [],
+                        "reviewInfo": {
+                            "userId": "",
+                            "author": "",
+                            "date": "",
+                            "moveType": "noMove",
+                            "prevType": -1
+                        },
+                        "reviewType": "common",
+                        "type": "run"
+                    },
+                    {
+                        "bFromDocument": true,
+                        "rPr": {
+                            "bFromDocument": true,
+                            "type": "textPr"
+                        },
+                        "content": [
+                            "This is a block text content control with a tag set to i",
+                            {
+                                "type": "tab"
+                            },
+                            {
+                                "type": "tab"
+                            },
+                            {
+                                "type": "tab"
+                            },
+                            {
+                                "type": "tab"
+                            },
+                            {
+                                "type": "tab"
+                            },
+                            {
+                                "type": "tab"
+                            },
+                            {
+                                "type": "tab"
+                            },
+                            {
+                                "type": "tab"
+                            },
+                            "t."
+                        ],
+                        "footnotes": [],
+                        "endnotes": [],
+                        "reviewInfo": {
+                            "userId": "",
+                            "author": "",
+                            "date": "",
+                            "moveType": "noMove",
+                            "prevType": -1
+                        },
+                        "reviewType": "common",
+                        "type": "run"
+                    },
+                    {
+                        "bFromDocument": true,
+                        "rPr": {
+                            "bFromDocument": true,
+                            "type": "textPr"
+                        },
+                        "content": [],
+                        "footnotes": [],
+                        "endnotes": [],
+                        "reviewInfo": {
+                            "userId": "",
+                            "author": "",
+                            "date": "",
+                            "moveType": "noMove",
+                            "prevType": -1
+                        },
+                        "reviewType": "common",
+                        "type": "run"
+                    },
+                    {
+                        "bFromDocument": true,
+                        "rPr": {
+                            "bFromDocument": true,
+                            "type": "textPr"
+                        },
+                        "content": [],
+                        "footnotes": [],
+                        "endnotes": [],
+                        "reviewInfo": {
+                            "userId": "",
+                            "author": "",
+                            "date": "",
+                            "moveType": "noMove",
+                            "prevType": -1
+                        },
+                        "reviewType": "common",
+                        "type": "endRun"
+                    }
+                ],
+                "changes": [],
+                "type": "paragraph"
+            },
+            {
+                "bFromDocument": true,
+                "pPr": {
+                    "bFromDocument": true,
+                    "type": "paraPr"
+                },
+                "rPr": {
+                    "bFromDocument": true,
+                    "type": "textPr"
+                },
+                "content": [
+                    {
+                        "bFromDocument": true,
+                        "rPr": {
+                            "bFromDocument": true,
+                            "type": "textPr"
+                        },
+                        "content": [
+                            "Tag: This is a tag."
+                        ],
+                        "footnotes": [],
+                        "endnotes": [],
+                        "reviewInfo": {
+                            "userId": "",
+                            "author": "",
+                            "date": "",
+                            "moveType": "noMove",
+                            "prevType": -1
+                        },
+                        "reviewType": "common",
+                        "type": "run"
+                    },
+                    {
+                        "bFromDocument": true,
+                        "rPr": {
+                            "bFromDocument": true,
+                            "type": "textPr"
+                        },
+                        "content": [],
+                        "footnotes": [],
+                        "endnotes": [],
+                        "reviewInfo": {
+                            "userId": "",
+                            "author": "",
+                            "date": "",
+                            "moveType": "noMove",
+                            "prevType": -1
+                        },
+                        "reviewType": "common",
+                        "type": "run"
+                    },
+                    {
+                        "bFromDocument": true,
+                        "rPr": {
+                            "bFromDocument": true,
+                            "type": "textPr"
+                        },
+                        "content": [],
+                        "footnotes": [],
+                        "endnotes": [],
+                        "reviewInfo": {
+                            "userId": "",
+                            "author": "",
+                            "date": "",
+                            "moveType": "noMove",
+                            "prevType": -1
+                        },
+                        "reviewType": "common",
+                        "type": "endRun"
+                    }
+                ],
+                "changes": [],
+                "type": "paragraph"
+            }
+        ],
+        "type": "docContent"
+    },
+    "type": "blockLvlSdt"
+}

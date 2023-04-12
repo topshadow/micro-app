@@ -6,6 +6,9 @@
     <Select v-model:value="meta.componentType" :options="options" ></Select>
 
 </FormItem>
+<FormItem label="提示文本">
+<Input v-model:value="meta.placeholder" placeholder="提示文本" />
+</FormItem>
 
 
 </TabPane>
@@ -15,13 +18,14 @@
     
 </FormItem>
 <FormItem label="字段列表">
-    <Select v-model:value="meta.fields" multiple :options="fieldsOptions" ></Select>
+    <Select v-model:value="meta.fields" mode="multiple" :options="fieldsOptions" ></Select>
     
 </FormItem>
 
 </TabPane>
 <TabPane key="validation" tab="数据校验"></TabPane>
 <TabPane key="datasync" tab="数据同步"></TabPane>
+<TabPane key="domtree" tab="文档树"></TabPane>
 
 
 
@@ -34,7 +38,7 @@
 import {ref,reactive} from 'vue';
 import {Button} from 'ant-design-vue';
 
-import {Form,FormItem,Select,Tabs,TabPane} from 'ant-design-vue';
+import {Form,FormItem,Select,Tabs,TabPane,Input} from 'ant-design-vue';
 import { Meta } from '../lib/meta/meta';
 import {addControl} from '../lib/meta/control';
 
@@ -61,7 +65,9 @@ const  fieldsOptions =  ref([{
 ]);
 
 
-function addMetaControl(e){
+function addMetaControl(_e:any){
+    meta.id=Date.now();
+    alert(JSON.stringify(meta));
 addControl(meta);
 
 }

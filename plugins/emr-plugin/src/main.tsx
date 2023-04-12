@@ -116,6 +116,7 @@ function init() {
       // }
     })
   }
+  
 
   window.Asc.plugin.button = function (id: string) {
     this.executeCommand("close", "");

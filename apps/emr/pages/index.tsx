@@ -23,7 +23,7 @@ interface EmrConfig {
 }
 let opt: EmrConfig = {
   documentServerUrl: 'http://localhost/', id: 'test', height: 900, width: 1600, document_fileType: 'docx',
-  document_title: 'demo.docx', documentType: 'word', type: 'word', editorConfig_lang: 'en',
+  document_title: 'demo.docx', documentType: 'word', type: 'word', editorConfig_lang: 'zh',
 
 };
 
@@ -99,6 +99,7 @@ const onLoad = () => {
       document: {
         fileType: opt.document_fileType,
         title: opt.document_title,
+
       },
       documentType: opt.documentType,
       editorConfig: {
@@ -131,9 +132,13 @@ const onLoad = () => {
     }, {
       document: {
         url: "http://localhost",
-        key: "712027760_embedded"
+        key: "172.17.0.1new.docx91681144194024",
+        fileType: 'docx',
+        title: opt.document_title,
+
       },
       editorConfig: {
+        lang: 'zh',
         mode: "edit",
         user: {
           id: "uid-1",
@@ -141,7 +146,7 @@ const onLoad = () => {
         },
         plugins: {
           autostart:
-            [],
+            ['asc.{FFE1F462-1EA2-4391-990D-4CC849400058}'],
           pluginsData: [
             'http://localhost:5173/config.json'
 
@@ -151,6 +156,7 @@ const onLoad = () => {
     });
     debugger;
     const editor = window['DocsAPI'].DocEditor(opt.id, initConfig);
+    window['editor'] = editor;
     window['DocEditor'].instances[opt.id] = editor;
   } catch (err: any) {
     console.error(err);
