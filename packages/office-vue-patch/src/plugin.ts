@@ -3,6 +3,7 @@ import { createApp } from 'vue';
 import Office from './Office.vue';
 import Antd from 'ant-design-vue';
 import { controlsMap } from './lib/meta/control';
+import { myUtil } from './lib/office-fix';
 
 declare var window: any;
 
@@ -25,6 +26,7 @@ function ShowApp(x, y) {
 
 }
 
+
 function getEditFrame() {
     return window.frames[0]
 
@@ -38,6 +40,10 @@ function setEditComponent(meta: any) {
 
     }
 }
+
+
+window['myUtil'] = myUtil;
+
 
 setTimeout(() => {
     const editor_sdk = document.getElementById('editor_sdk') as HTMLDivElement;
@@ -56,11 +62,14 @@ setTimeout(() => {
 
 
 
+
+
+
     window.asc_docs_api.prototype.asc_registerCallback('asc_onHideContentControlsActions', () => { hideApp() });
     window.asc_docs_api.prototype.asc_registerCallback('asc_onShowContentControlsActions', (arg, x, y) => {
         debugger;
         let obj = arg.obj;
-
+        myUtil.selectControl(null)
         let tag = arg.pr.get_Tag();
         let id = arg.pr.get_Id();
         debugger;
@@ -72,7 +81,8 @@ setTimeout(() => {
             meta.id = id;
             // alert(JSON.stringify(meta))
             window['control'] = meta;
-            setEditComponent(meta);
+            myUtil.selectControl(meta);
+
 
         } catch {
             alert('no component')

@@ -1,7 +1,7 @@
 <template>
     <div>
     <div v-if="control">
-        {{ JSON.stringify(control) }}
+        <!-- {{ JSON.stringify(control) }} -->
     <div style="background-color: #fff;z-index: 99999">
     <div v-if="control.componentType=='checkbox'">
 checkbox
@@ -34,40 +34,34 @@ const value=ref(null);
 const options=ref<{label:string,value:string}[]>([]);
 dayjs.locale('zh-cn');
 
-let control=ref({}  as Meta);
+let control=ref({}  as Control);
 onMounted(()=>{
-setInterval(()=>{
-    if(window.frames[0]){
-    if(window.frames[0].window['control']){
-        // debugger;
-        
-    if(control.value.id!=window.frames[0].window['control'].id){
-    control.value= window.frames[0].window['control'];
-    if(control.value){
-    if(control.value.table&&control.value.fields){
+    setTimeout(() => {
+        frames[0].window.eventBus.$on('selectControl',(ctrl:Control)=>{
+            control.value=ctrl;  
+
+            if(ctrl){
+
+        if(control.value.table&&control.value.fields){
        let datasource= new Datasource(control.value.table,control.value.fields);
         datasource.queryObject().exec().then(rtn=>{
             let opts=rtn.data[control.value.table];
                 options.value=opts.map((opt:any)=>{return{label:opt.name,value:opt.id}});
         });
     }
-    }
-}
-}else{
-    console.log('no window control')
-    control.value={};
 
-}
     }
+    })  
+    }, 8000);
+ 
 
-},1000)
 
 });
 
 function changeValue(e){
     if(control.value.id){
-    let currentPr=controlsMap[control.value.id];
-    let placeholder=options.value.find(v=>v.value==e)
+    // let currentPr=controlsMap[control.value.id];
+    let placeholder=options.value.find(v=>v.value==e);
         if(placeholder){
 
             control.value.placeholder=placeholder.label;
@@ -75,14 +69,8 @@ function changeValue(e){
         }
 
             debugger;
-        // addControl(control.value);
-        // currentPr.put_PlaceholderText('a');
-        // window['currentPr']=currentPr;
-        // let prop=currentPr.obj.ContentControlProperties||currentPr.pr.ContentControlProperties;
-        debugger;
-        window.frames[0].window.addControl(control.value);
-        // currentPr.obj.ContentControlProperties.PlaceHolderText='test';
-        // window.parent.window.Asc;
+            myUtil.setControlValue(control.value as any,placeholder?.value, placeholder?.label);
+            control.value=null as any;
 
 
     }}

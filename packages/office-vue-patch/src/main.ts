@@ -19,17 +19,18 @@ if (window['envirment'] == 'office') {
                 debugger;
             }
         }
-        window.Asc.plugin.onCommandCallback = function (args) {
+        // window.Asc.plugin.onCommandCallback = function (args) {
 
-            console.log('on command callback', args, arguments);
-            var plugin = window.Asc.plugin;
-            console.log(plugin);
-            console.log(Asc.scope.st)
-            if (Asc.scope.st) {
-                window['jsonTree'] = JSON.parse(Asc.scope.st)
-                console.log('set jsontree')
-            }
-        }
+        //     console.log('on command callback', args, arguments);
+        //     var plugin = window.Asc.plugin;
+        //     console.log(plugin);
+        //     console.log(Asc.scope.st)
+        //     if (Asc.scope.st) {
+        //         window['jsonTree'] = JSON.parse(Asc.scope.st)
+        //         console.log('set jsontree')
+        //     }
+        // }
+
 
 
     }

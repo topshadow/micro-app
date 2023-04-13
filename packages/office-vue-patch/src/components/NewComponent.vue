@@ -1,5 +1,6 @@
 <template>
 {{ JSON.stringify(meta) }}
+
 <Tabs>
 <TabPane key="basic" tab="基础">
     <FormItem label="组件类型">
@@ -39,17 +40,22 @@ import {ref,reactive} from 'vue';
 import {Button} from 'ant-design-vue';
 
 import {Form,FormItem,Select,Tabs,TabPane,Input} from 'ant-design-vue';
-import { Meta } from '../lib/meta/meta';
+
 import {addControl} from '../lib/meta/control';
 
-const meta= reactive({componentType:'select'} as Meta);
+const meta= ref<Control>({} as Control)
 
 
-const  options =  ref([{
-    label:"选择控件",value:'select'},
+const  options =  ref([
+  {label:'表单组',value:'group'},
+  {label:'表单组-可复数',value:'group-multiple'},
+  
+  
+  {label:"选择控件",value:'select'},
   {label:'复选框',value: 'checkbox'},
   {label: '单选框' ,value:'radio'},
   {label: '日期控件' ,value:'datetime'},
+  
 
 ]);
 const  datasourceOptions =  ref([{
@@ -65,13 +71,17 @@ const  fieldsOptions =  ref([{
 ]);
 
 
-function addMetaControl(_e:any){
-    meta.id=Date.now();
-    alert(JSON.stringify(meta));
-addControl(meta);
 
+
+
+function addMetaControl(){
+  meta.value.id=Date.now();
+  Asc.scope.control=meta.value;
+  Asc.plugin.callCommand(function(){
+    myUtil.addControl(Api,Asc.scope.control)
+  },false,true)
+  
 }
-
 
 
 

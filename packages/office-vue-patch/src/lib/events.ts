@@ -1,19 +1,17 @@
 
-type EventMap = {
-    [key in 'domtree' | 'a']: Function[];
-};
 
-class EventBus {
+
+class EventBusImpl implements EventBus {
 
 
     constructor(public callbacks: Partial<EventMap> = {}) {
 
     }
-    $on(name: 'domtree', fn: Function) {
+    $on(name: EventType, fn: Function) {
         this.callbacks[name] = this.callbacks[name] || [];
         this.callbacks[name]?.push(fn)
     }
-    $emit(name: 'domtree', args: any[]) {
+    $emit(name: EventType, args: any[]) {
         if (this.callbacks[name]) {
             this.callbacks[name]?.forEach(cb => cb(args))
         }
@@ -21,5 +19,5 @@ class EventBus {
 
 }
 
-export let eventBus = new EventBus();
-window['eventBus'] = eventBus;
+export let eventBus = new EventBusImpl();
+window.eventBus = eventBus;
