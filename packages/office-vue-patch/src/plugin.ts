@@ -18,8 +18,8 @@ function ShowApp(x, y) {
     let app = document.getElementById('app') as HTMLDivElement;
     app.style.zIndex = 99 + '';
     if (x || y) {
-        app.style.left = x - 90 + 'px';
-        app.style.top = y + 10 + 'px';
+        app.style.left = x + 'px';
+        app.style.top = y + 'px';
 
     }
 
@@ -32,20 +32,12 @@ function getEditFrame() {
 
 }
 
-function setEditComponent(meta: any) {
-    let parent = getEditFrame();
-    window['control'] = meta;
-    if (parent) {
-        window.frames[0].window.control = meta;
-
-    }
-}
-
 
 window['myUtil'] = myUtil;
 
 
 setTimeout(() => {
+
     const editor_sdk = document.getElementById('editor_sdk') as HTMLDivElement;
     let appEl = document.createElement('div');
     appEl.id = 'app';
@@ -71,14 +63,14 @@ setTimeout(() => {
         let obj = arg.obj;
         myUtil.selectControl(null)
         let tag = arg.pr.get_Tag();
-        let id = arg.pr.get_Id();
+        // let id = arg.pr.get_Id();
         debugger;
         // controlsMap[id] = { pr: arg.pr, obj };
         let isComponent = true;
         let meta: any = {};
         try {
             meta = JSON.parse(tag);
-            meta.id = id;
+            // meta.id = id;
             // alert(JSON.stringify(meta))
             window['control'] = meta;
             myUtil.selectControl(meta);

@@ -14,14 +14,15 @@ const prisma = new PrismaClient();
 
 import { ApolloServer } from '@apollo/server';
 import { AuthResolver } from '../../libs/auth/auth.resolver';
-let allResolvers = [...resolvers, AuthResolver] as any;
+import { EmrResolver, PutEmrContentInput, PutEmrContentResult } from '../../libs/auth/emr.resolver';
+let allResolvers = [...resolvers, AuthResolver, EmrResolver] as any;
 
 const schema = await buildSchema({
 
     resolvers: allResolvers, validate: false,
 
     // here provide all the types that are missing in schema
-    orphanedTypes: [],
+    orphanedTypes: [PutEmrContentInput, PutEmrContentResult],
 });
 
 

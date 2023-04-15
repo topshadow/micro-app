@@ -55,6 +55,7 @@ if (window['envirment'] == 'office') {
             try {
                 meta = JSON.parse(controlTag);
                 window['control'] = meta;
+                eventBus.$emit('selectControl', meta);
 
 
             } catch (e) {

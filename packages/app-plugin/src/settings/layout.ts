@@ -1,6 +1,0 @@
-function layoutChange() {
-
-}
-export {
-    layoutChange
-}

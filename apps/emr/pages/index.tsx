@@ -131,9 +131,11 @@ const onLoad = () => {
       width: opt.width,
     }, {
       document: {
+        // "url": "http://localhost/example/download?fileName=new.docx&useraddress=172.17.0.1",
         "url": "http://localhost/example/download?fileName=new%20(1).docx&useraddress=172.17.0.1",
 
-        key: "172.17.0.1new__1_.docx11681352180566",
+        "key": "172.17.0.1new__1_.docx91681518270191",
+
         fileType: 'docx',
         title: opt.document_title,
 

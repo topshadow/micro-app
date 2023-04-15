@@ -7,8 +7,15 @@
 const nextConfig = {
     // basePath: '/v1.0/invoke/master/method',
     compiler: {
+        api: {
+            responseLimit: '30mb'
+        },
 
     },
+    api: {
+        responseLimit: '30mb'
+    },
+
 
     nx: {
         // Set this to true if you would like to use SVGR
