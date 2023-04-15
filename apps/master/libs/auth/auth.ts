@@ -8,6 +8,7 @@ export class LoginInput {
     password: string;
 }
 @ObjectType()
+
 export class LoginResult {
     @Field()
     token: string
