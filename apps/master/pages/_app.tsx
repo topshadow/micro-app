@@ -26,16 +26,16 @@ export default function App(args: { Component, pageProps, req }) {
 
     let { Component, pageProps, } = args;
     let [user, setUser] = useState(null);
-    useEffect(() => {
-        if (typeof window != 'undefined') {
-            let token = Cookie.get('token');
-            decodeUser(token).then(rtn => {
-                setUser(rtn.payload);
+    // useEffect(() => {
+    //     if (typeof window != 'undefined') {
+    //         let token = Cookie.get('token');
+    //         decodeUser(token).then(rtn => {
+    //             setUser(rtn.payload);
 
-            });
-        }
+    //         });
+    //     }
 
-    }, [])
+    // }, [])
     return <div>
         <AuthContext.Provider value={user}>
             <ApolloProvider client={client}>

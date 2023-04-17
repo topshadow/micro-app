@@ -2,7 +2,6 @@ import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
 import { eventBus } from '../libs/plugin/index';
-import { sum } from 'plugin';
 
 enum SubAppLayout {
   fullscreen = 'fullscreen',

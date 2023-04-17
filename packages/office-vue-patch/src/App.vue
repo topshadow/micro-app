@@ -15,6 +15,7 @@ import {eventBus} from './lib/events';
 import {client} from './lib/datasource/client';
 
 import gql from 'graphql-tag';
+import { FormContextManager } from './lib/form-context-manager';
 const selectedEmr=ref<Emr>({meta:''})
 const isDebug=ref(true)
 const controll= ref({});
@@ -25,7 +26,7 @@ const selectItemId=ref(null);
 const showControlJson=ref(false);
 const emrs=ref<Emr[]>([]);
 const showEmrTitleModal=ref(false);
-
+const formContextManager =ref(new FormContextManager())
 
 
 
@@ -280,7 +281,7 @@ function reloadEmr(e:string){
   <Tabs>
     <TabPane key="design" tab="设计"></TabPane>
     <TabPane key="new" tab="新增">
-      <NewComponent :isDebug="isDebug"></NewComponent>
+      <NewComponent :formContextManger="formContextManager" :isDebug="isDebug"></NewComponent>
     </TabPane>
     <TabPane key="preview" tab="预览">预览模式</TabPane>
     <TabPane key="domtree" tab="文档树">
@@ -302,7 +303,6 @@ function reloadEmr(e:string){
       
     <Tree :show-icon="true" :tree-data="treeData" @select="selectItem">
       <template #icon="{componentType,key}">
-        <!-- {{getControlComponentTypeById(key)}} -->
         <InsertRowBelowOutlined v-if="getControlComponentTypeById(key)=='select'" />
         <FolderOpenOutlined v-if="getControlComponentTypeById(key)=='group'" />
         <CheckCircleOutlined v-if="getControlComponentTypeById(key)=='radio'" />
