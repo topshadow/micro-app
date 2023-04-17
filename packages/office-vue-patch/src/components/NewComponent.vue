@@ -1,5 +1,5 @@
 <template>
-<div  v-if="attrs.isDebug">
+<div  v-if="props.isDebug">
   {{ JSON.stringify(meta) }}
 
 </div> 
@@ -67,13 +67,15 @@
 <Button type="primary" style="width:100%;position:fixed;bottom:20px" @click="addMetaControl">插入控件</Button>
 </template>
 <script setup lang="ts">
-import {ref,reactive,useAttrs} from 'vue';
+import {ref,reactive,useAttrs,defineProps} from 'vue';
 import {Button} from 'ant-design-vue';
 
 import {Form,FormItem,Select,Tabs,TabPane,Input,Checkbox} from 'ant-design-vue';
 
 import {addControl} from '../lib/meta/control';
-const attrs= useAttrs();
+import { FormContextManager } from '../lib/form-context-manager';
+
+const props= defineProps({formContextManager:FormContextManager,isDebug:Boolean})
 
 
 function addNewOption(index?:number){
@@ -121,11 +123,7 @@ const  fieldsOptions =  ref([{
 
 
 function addMetaControl(){
-  meta.value.id=Date.now();
-  Asc.scope.control=meta.value;
-  Asc.plugin.callCommand(function(){
-    myUtil.addControl(Api,Asc.scope.control)
-  },false,true)
+  props.formContextManager?.addControls(meta.value)
   
 }
 
