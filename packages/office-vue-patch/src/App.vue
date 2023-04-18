@@ -41,27 +41,41 @@ const formValue = ref<any>({});
 const showConditionModal=ref(false);
 const selectedEmrMeta=ref(null);
 onMounted(()=>{
-
+  window.formCtx=formContextManager.value;
+  formContextManager.value.controls=JSON.parse(localStorage.getItem('controls')||'[]')
   loadEmrs();
   eventBus.$on('all-dom-tree',(d: string)=>{
   selectedEmr.value.meta=d;
   showEmrTitleModal.value=true;
+  });
+  eventBus.$on('document-change',()=>{
+    console.log('document-change');
+    refreshTrees();
+    localStorage.setItem('controls',JSON.stringify(formContextManager.value.controls));
+
   })
-  eventBus.$on('domtree',(args:Control[])=>{
-    // console.log(args)
+  eventBus.$on('domtree',(args:OfficeApiBlockLvlSdt[]|OfficeApiInlineLvlSdt[])=>{
+    
     controllList.value=[];
     treeData.value=[];
     setTimeout(() => {
-      controllList.value=args;
-    treeData.value=transformTreeItems(args);
+      // controllList.value=args;
+      formContextManager.value.officeControls=args;
+      debugger;
+     treeData.value= formContextManager.value.toTreeNodeItems();
+     let treeDatavalue=treeData.value;
+     debugger;
+
+
+    // treeData.value=transformTreeItems(args);
 
       
     }, 100);
     eventBus.$on('control-value-change',(event:ControlValueChangeEvent)=>{
       console.log('app start',event);
-    formValue.value[event.control.id as string]=event.newValue;
+    formValue.value[event.control.id ]=event.newValue;
 // console.log(formValue);
-      controllList.value.forEach(c=>{
+      formContextManager.value.controls.forEach(c=>{
         if(c.conditions){
           c.conditions.forEach(cc=>{
             console.log('条件',c.conditions);
@@ -79,10 +93,11 @@ onMounted(()=>{
               },false,true);
             }else{
               Asc.scope.control=c;
+              Asc.scope.officeControl= formContextManager.value.officeControls.find(oc=>JSON.parse(oc.GetTag()).id==c.id)?.ToJSON();
               Asc.plugin.callCommand(function(){
-                let {control}=Asc.scope;
-                
-                myUtil.recoverControlGroup(Api,control.pid,control);
+                let {control,officeControl}=Asc.scope;
+                  console.log('准备恢复控件',control)
+                myUtil.recoverControlGroup(Api,control.pid,control,officeControl);
               })
 
             }
@@ -141,20 +156,19 @@ function transformTreeItem(control:Control,controls:Control[]):TreeDataItem[]{
 
 function refreshTrees(){
 window.Asc.plugin.callCommand(function(){
-console.log('refresh tree');
-let json= myUtil.getAllControlTags(Api.GetDocument());
-  console.log(json);
-  frames[0].window.eventBus.$emit('domtree',json)
-  // window.refreshTree();
+  frames[0].window.eventBus.$emit('domtree',Api.GetDocument().GetAllContentControls())
+  
 })
 
 }
 function selectItem(e:string[]){
   console.log(e);
   if(e.length>0){
-    let selectedItem= controllList.value.find(c=>c.id==e[0]);
-    let exsist= controllList.value.filter(c=>c.id==e[0]);
-    console.log('exsit',exsist)
+
+    // let selectedItem= controllList.value.find(c=>c.id==e[0]);
+  let selectedItem=   formContextManager.value.controls.find(c=>c.id+''==e[0])
+    // let exsist= controllList.value.filter(c=>c.id==e[0]);
+    console.log('exsit',selectedItem)
  selectedControl.value=selectedItem  as Control;
  console.log(selectedControl.value);
 
@@ -249,11 +263,39 @@ function reloadEmr(e:string){
     
   },false,true)
 }
+function  clearAll(){
+  formContextManager.value.clearAll();
+}
 </script>
 
 
 
 <template>
+  <Button @click="clearAll()">清除所有</Button>
+   <div v-if="selectedControl">
+        
+        <Button @click="showControlJson=true">显示控件元数据</Button>
+        <Button @click="deleteSelectControl()">删除</Button>
+        <Button @click="recoverControl()">插入</Button>
+        <Button @click="addCondition()"> 添加条件 </Button>
+      </div>
+  <FormItem label="文档树">
+      <Tree :show-icon="true" :tree-data="treeData" @select="selectItem">
+      <template #icon="{componentType,key,icon,slots}">
+        <InsertRowBelowOutlined v-if="slots.icon=='select'" />
+        <FolderOpenOutlined v-if="slots.icon=='group'" />
+        <CheckCircleOutlined v-if="slots.icon=='radio'" />
+        <CheckSquareOutlined v-if="slots.icon=='checkbox'" />
+        <CalendarOutlined v-if="slots.icon=='datetime'"></CalendarOutlined>
+        
+
+      </template>
+</Tree>
+ <div>
+  {{ JSON.stringify(formValue) }}
+ </div>
+</FormItem>
+
   <Modal title="保存模板" :visible="showEmrTitleModal" @ok="uploadEmr()" @cancel="showEmrTitleModal=false">
   <FormItem label="显示emr">
     <Input v-model:value="selectedEmr.title" />
@@ -281,7 +323,7 @@ function reloadEmr(e:string){
   <Tabs>
     <TabPane key="design" tab="设计"></TabPane>
     <TabPane key="new" tab="新增">
-      <NewComponent :formContextManger="formContextManager" :isDebug="isDebug"></NewComponent>
+      <NewComponent :form-context-manager="formContextManager" :is-debug="isDebug"></NewComponent>
     </TabPane>
     <TabPane key="preview" tab="预览">预览模式</TabPane>
     <TabPane key="domtree" tab="文档树">
@@ -289,30 +331,11 @@ function reloadEmr(e:string){
       
       <Button @click="refreshTrees()">刷新</Button>
       <Button @click="saveEmr()">保存为模板</Button>
-      <div v-if="selectedControl">
-        
-        <Button @click="showControlJson=true">显示控件元数据</Button>
-        <Button @click="deleteSelectControl()">删除</Button>
-        <Button @click="recoverControl()">插入</Button>
-        <Button @click="addCondition()"> 添加条件 </Button>
-      </div>
+     
          
       
       
-    <div style="max-height:500px;overflow-y: scroll;padding-bottom: 30px">
-      
-    <Tree :show-icon="true" :tree-data="treeData" @select="selectItem">
-      <template #icon="{componentType,key}">
-        <InsertRowBelowOutlined v-if="getControlComponentTypeById(key)=='select'" />
-        <FolderOpenOutlined v-if="getControlComponentTypeById(key)=='group'" />
-        <CheckCircleOutlined v-if="getControlComponentTypeById(key)=='radio'" />
-        <CheckSquareOutlined v-if="getControlComponentTypeById(key)=='checkbox'" />
-        <CalendarOutlined v-if="getControlComponentTypeById(key)=='datetime'"></CalendarOutlined>
-        
-
-      </template>
-</Tree>
-  </div>
+    
       
     </TabPane>
   </Tabs>
@@ -327,7 +350,7 @@ function reloadEmr(e:string){
       <div v-for="condition of selectedControl.conditions">
         {{ JSON.stringify(condition) }}
         <div style="display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;">
-          <Select v-model:value="condition.fieldControlId" :options="controllList.filter(c=>c.componentType!='group').map(c=>{return {label:c.placeholder,value:c.id}})"></Select>
+          <Select v-model:value="condition.fieldControlId" :options="formContextManager.controls.filter(c=>c.componentType!='group').map(c=>{return {label:c.label,value:c.id}})"></Select>
           <Select v-model:value="condition.conditionType" :options="[{label:'等于',value:'='},{label:'大于',value:'>'},{label:'小于',value:'<'},{label:'包含',value:'contains'} ]"></Select>
           <Input v-model:value="condition.value" />
           <Select v-model:value="condition.andOr" :options="[{label:'且',value:'and'},{label:'或',value:'or'} ]"></Select>

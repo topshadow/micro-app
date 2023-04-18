@@ -40,29 +40,31 @@ if (window['envirment'] == 'office') {
     }
     window.Asc.plugin.event_onClick = function (isSelectionUse: boolean) {
         window.Asc.plugin.executeMethod("GetCurrentContentControlPr", [], function (obj: any) {
-            window.Asc.plugin.currentContentControl = obj;
+            // window.Asc.plugin.currentContentControl = obj;
             debugger;
             // window['control'] = obj;
             if (!obj) {
-                window.control = null;
-                window.parent.window['control'] = null;
+                // window.control = null;
+                // window.parent.window['control'] = null;
 
                 return;
             }
-            console.log('obj', obj)
-            var controlTag = obj ? obj.Tag : "";
-            let meta = {} as any;
-            try {
-                meta = JSON.parse(controlTag);
-                window['control'] = meta;
-                eventBus.$emit('selectControl', meta);
+            // console.log('obj', obj)
+            // var controlTag = obj ? obj.Tag : "";
+            // debugger;
+
+            // let meta = myUtil.getControlById(obj.Id as number);
+            // try {
+            //     meta = JSON.parse(controlTag);
+            //     window['control'] = meta;
+            //     eventBus.$emit('selectControl', meta);
 
 
-            } catch (e) {
+            // } catch (e) {
 
-                // alert(e);
-                meta = {}
-            }
+            //     // alert(e);
+            //     meta = {}
+            // }
             // if (meta.componentType) {
             //   // alert(meta.componentType);
             //   showComponentSetting(meta)

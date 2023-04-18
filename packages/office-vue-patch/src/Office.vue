@@ -1,7 +1,7 @@
 <template>
     <div>
     <div v-if="control">
-        {{ control.id }}
+        <!-- {{ control.id }} -->
         <!-- {{ JSON.stringify(control) }} -->
     <div style="background-color: #fff;z-index: 99999">
     <div v-if="control.componentType=='checkbox'">
@@ -51,6 +51,7 @@ let control=ref({}  as Control);
 onMounted(()=>{
     setTimeout(() => {
         frames[0].window.eventBus.$on('selectControl',(ctrl:Control)=>{
+            debugger;
             control.value=ctrl;  
             
             if(ctrl){

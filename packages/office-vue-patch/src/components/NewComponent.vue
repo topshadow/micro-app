@@ -75,7 +75,7 @@ import {Form,FormItem,Select,Tabs,TabPane,Input,Checkbox} from 'ant-design-vue';
 import {addControl} from '../lib/meta/control';
 import { FormContextManager } from '../lib/form-context-manager';
 
-const props= defineProps({formContextManager:FormContextManager,isDebug:Boolean})
+const props= defineProps<{formContextManager:FormContextManager,isDebug:Boolean}>()
 
 
 function addNewOption(index?:number){
@@ -123,7 +123,9 @@ const  fieldsOptions =  ref([{
 
 
 function addMetaControl(){
-  props.formContextManager?.addControls(meta.value)
+    meta.value.id=Date.now();
+
+  props.formContextManager?.addControls(  JSON.parse(JSON.stringify(meta.value)) )
   
 }
 

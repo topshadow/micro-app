@@ -107,7 +107,14 @@ const onLoad = () => {
             },
             events: {
                 onAppReady: opt.onAppReady,
-                onDocumentStateChange: opt.events_onDocumentStateChange,
+                onDocumentStateChange: (e) => {
+                    if (window.frames[0].frames[0]) {
+                        let pluginWindow = window.frames[0].frames[0].window;
+                        pluginWindow['eventBus'].$emit('document-change');
+
+                    }
+
+                },
                 onMetaChange: opt.events_onMetaChange,
                 onDocumentReady: opt.events_onDocumentReady,
                 // onInfo: opt.events_onInfo,
@@ -132,9 +139,9 @@ const onLoad = () => {
         }, {
             document: {
                 // "url": "http://localhost/example/download?fileName=new.docx&useraddress=172.17.0.1",
-                "url": "http://localhost/example/download?fileName=new%20(1).docx&useraddress=172.17.0.1",
+                "url": "http://localhost/example/download?fileName=new%20(3).docx&useraddress=172.17.0.1",
 
-                "key": "172.17.0.1new__1_.docx91681518270191",
+                "key": '172.17.0.1new__3_.docx71681782001062',
 
                 fileType: 'docx',
                 title: opt.document_title,

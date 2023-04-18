@@ -1,8 +1,7 @@
 /// <reference types="vite/client" />
 declare var window: any;
-
 declare var refreshTree: any;
-
+declare var formCtx: any;
 interface Emr {
     id: any;
     title: string;
@@ -10,19 +9,19 @@ interface Emr {
 }
 
 interface AscPlugin {
-
+    executeMethod(method: 'GetCurrentContentControlPr', ids: [], fn: (obj: any) => void);
     executeMethod(method: 'RemoveContentControl', controls: any[]): void;
     executeMethod(method: 'AddContentControlList', control: any): void
     callCommand: (fn: Function, isClose?: boolean, isCalc?: boolean, callback?: Function) => void;
-
+    currentContentControl: any;
 }
 
-declare var Asc: { plugin: AscPlugin, scope: any }
+declare var Asc: { plugin: AscPlugin, scope: any, }
 
 interface Control {
     /**控件标签,用于显示在组件树上 */
     label: string;
-    id?: string | number;
+    id: number;
     pid?: string | number;
     parentPosition?: number
     meta?: any;
@@ -35,6 +34,7 @@ interface Control {
     options: { label: string, value: any }[];
     originGroupJson?: string;
     conditions: VisibleCondition[];
+    children?: Control[];
 
 
 }
@@ -64,6 +64,7 @@ interface OfficeApi {
     ReplaceDocumentContent(conent: OfficeDocumentConent)
 }
 interface OfficeDocumentConent {
+    ToJSON(b: boolean, b2: boolean): string;
 
 }
 
@@ -101,11 +102,16 @@ interface OfficeApiBlockLvlSdt extends OfficeDocumentElement {
     Delete();
     AddElement(element: any, nPos: number);
     GetPlaceholderText(): string;
+    GetAllContentControls(): OfficeApiBlockLvlSdt[] | OfficeApiInlineLvlSdt[];
+    GetContent(): OfficeDocumentConent;
+    Push(oDoucment: any);
+
 
 
 }
 interface OfficeApiDocumentContent {
     GetElement(nPos: number): OfficeDocumentElment | null;
+    ToJSON(b: boolean, b2: boolean);
 
 }
 interface OfficeDocumentElement {
@@ -122,7 +128,8 @@ interface OfficeApiInlineLvlSdt {
     ToJSON(bWriteNumberings: boolean, bWriteStyles: boolean): string;
     Delete();
     AddElement(element: any, nPos: number);
-
+    GetAllContentControls(): OfficeApiBlockLvlSdt[] | OfficeApiInlineLvlSdt[];
+    Push(oDoucment: any);
 
 }
 interface OfficeContentControl {
@@ -139,9 +146,10 @@ interface Util {
     recoverControlGroup(api: OfficeApi, pid: any, control: Control);
     onControlValueChange(event: ControlValueChangeEvent);
     setControlCondition(control: Control);
+    getOfficeControlMetaWithId(id: number): Control | undefined;
 }
 
-type EventType = 'domtree' | 'selectControl' | 'control-value-change' | 'all-dom-tree';
+type EventType = 'domtree' | 'selectControl' | 'control-value-change' | 'all-dom-tree' | 'document-change';
 
 type EventMap = {
     [key in EventType]: Function[];

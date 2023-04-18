@@ -25,12 +25,9 @@ function ShowApp(x, y) {
 
 
 }
+window['ShowApp'] = ShowApp;
 
 
-function getEditFrame() {
-    return window.frames[0]
-
-}
 
 
 window['myUtil'] = myUtil;
@@ -59,48 +56,49 @@ setTimeout(() => {
 
     window.asc_docs_api.prototype.asc_registerCallback('asc_onHideContentControlsActions', () => { hideApp() });
     window.asc_docs_api.prototype.asc_registerCallback('asc_onShowContentControlsActions', (arg, x, y) => {
-        debugger;
+        let frameWindow = frames[0].window;
+        frameWindow.Asc.plugin.executeMethod("GetCurrentContentControlPr", [], function (obj: any) {
+            frameWindow.Asc.plugin.currentContentControl = obj;
+            debugger;
+            if (obj) {
+                let control = myUtil.getOfficeControlMetaWithId(JSON.parse(obj.Tag).id);
+                myUtil.selectControl(control);
+                if (control) {
+                    ShowApp(x, y);
+                } else {
+                    console.log('no control find')
+                }
+            } else {
+
+            }
+            setTimeout(() => {
+                editor_sdk.childNodes.forEach((n: any) => {
+                    if (n.id) {
+                        // alert(n.id)
+                        if (n.id.includes('menu-container-asc-gen') && n.id != 'app') {
+                            n.remove();
+                        }
+                    }
+                });
+            }, 100)
+
+        });
+        return;
         let obj = arg.obj;
-        myUtil.selectControl(null)
-        let tag = arg.pr.get_Tag();
-        // let id = arg.pr.get_Id();
+        // myUtil.selectControl(null)
+        let id = arg.pr.Id || arg.pr.id || arg.pr.GetId();
         debugger;
-        // controlsMap[id] = { pr: arg.pr, obj };
-        let isComponent = true;
-        let meta: any = {};
-        try {
-            meta = JSON.parse(tag);
-            // meta.id = id;
-            // alert(JSON.stringify(meta))
-            window['control'] = meta;
-            myUtil.selectControl(meta);
 
-
-        } catch {
-            alert('no component')
-            isComponent = false;
-        }
-        debugger;
-        if (!isComponent) {
-            window['control'] = null;
-        }
+        Asc.plugin.callCommand(function () {
+            let control = myUtil.getOfficeControlMetaWithId(Asc.scope.id);
+            debugger;
+            console.log(control)
+            eventBus.$emit('selectControl', control);
+        })
         ShowApp(x, y);
 
 
-        setTimeout(() => {
-            editor_sdk.childNodes.forEach((n: any) => {
-                if (n.id) {
-                    // alert(n.id)
-                    if (n.id.includes('menu-container-asc-gen') && n.id != 'app') {
-                        n.remove();
-                    }
 
-                }
-            }, 3000);
-
-
-
-        })
 
     });
 }, 5000);
