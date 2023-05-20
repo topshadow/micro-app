@@ -22,7 +22,7 @@ interface EmrConfig {
     type: string | number;
 }
 let opt: EmrConfig = {
-    documentServerUrl: 'http://localhost/', id: 'test', height: 900, width: 1600, document_fileType: 'docx',
+    documentServerUrl: 'http://localhost/', id: 'test', height: '100%', width: '100%', document_fileType: 'docx',
     document_title: 'demo.docx', documentType: 'word', type: 'word', editorConfig_lang: 'zh',
 
 };
@@ -139,9 +139,9 @@ const onLoad = () => {
         }, {
             document: {
                 // "url": "http://localhost/example/download?fileName=new.docx&useraddress=172.17.0.1",
-                "url": "http://localhost/example/download?fileName=new%20(3).docx&useraddress=172.17.0.1",
+                "url": "http://localhost/example/download?fileName=new.docx&useraddress",
 
-                "key": '172.17.0.1new__3_.docx71681782001062',
+                "key": '172.17.0.1new.docx11682233350625',
 
                 fileType: 'docx',
                 title: opt.document_title,
@@ -192,5 +192,5 @@ export default function Index() {
     }, [])
 
 
-    return <div id={opt.id}></div>
+    return <div style={{ width: '100vw', height: '100vh' }}> <div id={opt.id} style={{ width: '100vw', height: '100vh' }}></div></div>
 }

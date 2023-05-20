@@ -67,7 +67,7 @@ onMounted(()=>{
        let datasource= new Datasource(control.value.table as string,control.value.fields);
         datasource.queryObject().exec().then(rtn=>{
             let opts=rtn.data[control.value.table as string];
-                options.value=opts.map((opt:any)=>{return{label:opt.name,value:opt.id}});
+                options.value=opts.map((opt:any)=>{return{label:opt.username,value:opt.id}});
         });
     }else{
         options.value=ctrl.options
